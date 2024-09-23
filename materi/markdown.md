@@ -6,6 +6,7 @@
 Hukum De Morgan menyatakan bahwa:
 
 $$ \overline{A \cap B} = \overline{A} \cup \overline{B} $$ 
+
 $$ \overline{A \cup B} = \overline{A} \cap \overline{B} $$ 
 
 <p><strong>PEMBUKTIAN</strong></p>
@@ -14,71 +15,72 @@ $$ \overline{A \cup B} = \overline{A} \cap \overline{B} $$
 
 Misalkan kita memiliki dua himpunan berikut:
 
-- $ A = \{2, 4, 6\} $
-- $ B = \{4, 5, 7\} $
+$$A = \{2, 4, 6\}$$
+    
+$$B = \{4, 5, 7\}$$
 
-Dan ruang semesta $ $U$ $ adalah:
+Dan ruang semesta  $U$  adalah:
 
-- $ U = \{1, 2, 3, 4, 5, 6, 7, 8\} $
+$$U = \{1, 2, 3, 4, 5, 6, 7, 8\}$$
 
 #### a. Hukum De Morgan untuk Irisan
 
-$$ \overline{A \cap B} = \overline{A} \cup \overline{B} $$
+$$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
 
 **Langkah-langkah:**
 
-1. **Cari irisan $ A \cap B $:**
+1. **Cari irisan $A \cap B$:**
 
-   $ A \cap B = \{4\} $
+   $A \cap B = \{4\}$
 
-2. **Hitung komplemen dari $ A \cap B $ di ruang semesta $ U $:**
+2. **Hitung komplemen dari $A \cap B$ di ruang semesta $U$:**
 
-   $$ \overline{(A \cap B)} = U - (A \cap B) = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4\} = \{1, 2, 3, 5, 6, 7, 8\} $$
+   $$\overline{(A \cap B)} = U - (A \cap B) = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4\} = \{1, 2, 3, 5, 6, 7, 8\}$$
 
-3. **Hitung komplemen dari masing-masing himpunan $ A $ dan $ B $:**
+3. **Hitung komplemen dari masing-masing himpunan $A$ dan $B$:**
 
-   - $$ \overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\} $$
-   - $$ \overline{B} = U - B = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4, 5, 7\} = \{1, 2, 3, 6, 8\} $$
+   - $$\overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\}$$
+   - $$\overline{B} = U - B = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4, 5, 7\} = \{1, 2, 3, 6, 8\}$$
 
 4. **Hitung gabungan dari $( \overline{A} )$ dan $( \overline{B} )$:**
 
-   $$ \overline{A} \cup \overline{B} = \{1, 3, 5, 7, 8\} \cup \{1, 2, 3, 6, 8\} = \{1, 2, 3, 5, 6, 7, 8\} $$
+   $$\overline{A} \cup \overline{B} = \{1, 3, 5, 7, 8\} \cup \{1, 2, 3, 6, 8\} = \{1, 2, 3, 5, 6, 7, 8\}$$
 
 5. **Bandingkan hasilnya:**
 
-   - $$ \overline{(A \cap B)} = \{1, 2, 3, 5, 6, 7, 8\} $$
-   - $$ \overline{A} \cup \overline{B} = \{1, 2, 3, 5, 6, 7, 8\} $$
+   - $$\overline{(A \cap B)} = \{1, 2, 3, 5, 6, 7, 8\}$$
+   - $$\overline{A} \cup \overline{B} = \{1, 2, 3, 5, 6, 7, 8\}$$
 
 Dengan demikian, kita dapat lihat bahwa:
-$$ \overline{(A \cap B)} = \overline{A} \cup \overline{B} $$
+$$\overline{(A \cap B)} = \overline{A} \cup \overline{B}$$
 
 #### b. Hukum De Morgan untuk Gabungan
 
-$$ \overline{(A \cup B)} = \overline{A} \cap \overline{B} $$
+$$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 
 **Langkah-langkah:**
 
-1. **Cari gabungan $ A \cup B $:**
+1. **Cari gabungan $A \cup B$:**
 
-   $ ( A \cup B = \{2, 4, 6\} \cup \{4, 5, 7\} = \{2, 4, 5, 6, 7\} ) $
+   $( A \cup B = \{2, 4, 6\} \cup \{4, 5, 7\} = \{2, 4, 5, 6, 7\} )$
 
-2. **Hitung komplemen dari $ A \cup B $ di ruang semesta $ U $:**
+2. **Hitung komplemen dari $A \cup B$ di ruang semesta $U$:**
 
-   $$ \overline{(A \cup B)} = U - (A \cup B) = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 5, 6, 7\} = \{1, 3, 8\} $$
+   $$\overline{(A \cup B)} = U - (A \cup B) = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 5, 6, 7\} = \{1, 3, 8\}$$
 
-3. **Hitung irisan dari $ \overline{A} $ dan $ \overline{B} $:**
+3. **Hitung irisan dari $\overline{A}$ dan $\overline{B}$:**
 
-   - $$ \overline{A} = \{1, 3, 5, 7, 8\} $$
-   - $$ \overline{B} = \{1, 2, 3, 6, 8\} $$
-   - $$ \overline{A} \cap \overline{B} = \{1, 3, 5, 7, 8\} \cap \{1, 2, 3, 6, 8\} = \{1, 3, 8\} $$
+   - $$\overline{A} = \{1, 3, 5, 7, 8\}$$
+   - $$\overline{B} = \{1, 2, 3, 6, 8\}$$
+   - $$\overline{A} \cap \overline{B} = \{1, 3, 5, 7, 8\} \cap \{1, 2, 3, 6, 8\} = \{1, 3, 8\}$$
 
 4. **Bandingkan hasilnya:**
 
-   - $$ \overline{(A \cup B)} = \{1, 3, 8\} $$
-   - $$ \overline{A} \cap \overline{B} = \{1, 3, 8\} $$
+   - $$\overline{(A \cup B)} = \{1, 3, 8\}$$
+   - $$\overline{A} \cap \overline{B} = \{1, 3, 8\}$$
 
 Dengan demikian, kita dapat lihat bahwa:
-$$ \overline{(A \cup B)} = \overline{A} \cap \overline{B} $$
+$$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 
 ### Kesimpulan
 
@@ -92,60 +94,60 @@ Hukum Absorpsi dalam teori himpunan menyatakan dua hal berikut:
 
 - **Hukum Absorpsi untuk Gabungan (Union):**
   
-  $$ A \cup (A \cap B) = A $$
+  $$A \cup (A \cap B) = A$$
 
 - **Hukum Absorpsi untuk Irisan (Intersection):**
 
-  $$ A \cap (A \cup B) = A $$
+  $$A \cap (A \cup B) = A$$
 
 ### Contoh Hukum Absorpsi dengan Himpunan
 
 Misalkan kita memiliki dua himpunan berikut:
 
-- $ A = \{1, 2, 3\} $
-- $ B = \{3, 4, 5\} $
+- $A = \{1, 2, 3\}$
+- $B = \{3, 4, 5\}$
 
-Dan ruang semesta $ U $ adalah:
+Dan ruang semesta $U$ adalah:
 
-- $ U = \{1, 2, 3, 4, 5, 6\} $
+- $U = \{1, 2, 3, 4, 5, 6\}$
 
 #### a. Hukum Absorpsi untuk Gabungan
 
-$$ A \cup (A \cap B) = A $$
+$$A \cup (A \cap B) = A$$
 
 **Langkah-langkah:**
 
 1. **Hitung irisan $ A \cap B $:**
 
-   $$ A \cap B = \{3\} $$
+   $$A \cap B = \{3\}$$
 
-2. **Hitung gabungan $ A \cup (A \cap B) $:**
+2. **Hitung gabungan $A \cup (A \cap B)$:**
 
-   $$ A \cup (A \cap B) = \{1, 2, 3\} \cup \{3\} = \{1, 2, 3\} $$
+   $$A \cup (A \cap B) = \{1, 2, 3\} \cup \{3\} = \{1, 2, 3\}$$
 
    Dengan demikian:
 
-   $$ A \cup (A \cap B) = A $$
+   $$A \cup (A \cap B) = A$$
 
    Jadi, hukum absorpsi untuk gabungan terbukti benar.
 
 #### b. Hukum Absorpsi untuk Irisan
 
-$$ A \cap (A \cup B) = A $$
+$$A \cap (A \cup B) = A$$
 
 **Langkah-langkah:**
 
-1. **Hitung gabungan $ A \cup B $:**
+1. **Hitung gabungan $A \cup B$:**
 
-   $$ A \cup B = \{1, 2, 3\} \cup \{3, 4, 5\} = \{1, 2, 3, 4, 5\} $$
+   $$A \cup B = \{1, 2, 3\} \cup \{3, 4, 5\} = \{1, 2, 3, 4, 5\}$$
 
-2. **Hitung irisan $ A \cap (A \cup B) $:**
+2. **Hitung irisan $A \cap (A \cup B)$:**
 
-   $$ A \cap (A \cup B) = \{1, 2, 3\} \cap \{1, 2, 3, 4, 5\} = \{1, 2, 3\} $$
+   $$A \cap (A \cup B) = \{1, 2, 3\} \cap \{1, 2, 3, 4, 5\} = \{1, 2, 3\}$$
 
    Dengan demikian:
 
-   $$ A \cap (A \cup B) = A $$
+   $$A \cap (A \cup B) = A$$
 
    Jadi, hukum absorpsi untuk irisan terbukti benar.
 
@@ -154,9 +156,9 @@ $$ A \cap (A \cup B) = A $$
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum absorpsi dalam teori himpunan benar:
 
 - **Hukum Absorpsi untuk Gabungan:** 
-  $$ A \cup (A \cap B) = A $$
+  $$A \cup (A \cap B) = A$$
 - **Hukum Absorpsi untuk Irisan:** 
-  $$ A \cap (A \cup B) = A $$
+  $$A \cap (A \cup B) = A$$
 
 ---
 
@@ -166,56 +168,56 @@ Hukum Komplemen dalam teori himpunan menyatakan dua hal berikut:
 
 - **Hukum Komplemen untuk Gabungan (Union):**
 
-  $$ A \cup \overline{A} = U $$
+  $$A \cup \overline{A} = U$$
 
 - **Hukum Komplemen untuk Irisan (Intersection):**
 
-  $$ A \cap \overline{A} = \emptyset $$
+  $$A \cap \overline{A} = \emptyset$$
 
 ### Contoh Hukum Komplemen dengan Himpunan
 
 Misalkan kita memiliki himpunan berikut:
 
-- $ A = \{2, 4, 6\} $
-- Ruang semesta $ U = \{1, 2, 3, 4, 5, 6, 7, 8\} $
+- $A = \{2, 4, 6\}$
+- Ruang semesta $U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
 
 #### a. Hukum Komplemen untuk Gabungan
 
-$$ A \cup \overline{A} = U $$
+$$A \cup \overline{A} = U$$
 
 **Langkah-langkah:**
 
-1. **Hitung komplemen dari $ A $ di ruang semesta $ U $:**
+1. **Hitung komplemen dari $A$ di ruang semesta $U$:**
 
-   $$ \overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\} $$
+   $$\overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\}$$
 
-2. **Hitung gabungan $ A \cup \overline{A} $:**
+2. **Hitung gabungan $A \cup \overline{A}$:**
 
-   $$ A \cup \overline{A} = \{2, 4, 6\} \cup \{1, 3, 5, 7, 8\} = \{1, 2, 3, 4, 5, 6, 7, 8\} $$
+   $$A \cup \overline{A} = \{2, 4, 6\} \cup \{1, 3, 5, 7, 8\} = \{1, 2, 3, 4, 5, 6, 7, 8\}$$
 
    Dengan demikian:
 
-   $$ A \cup \overline{A} = U $$
+   $$A \cup \overline{A} = U$$
 
    Jadi, hukum komplemen untuk gabungan terbukti benar.
 
 #### b. Hukum Komplemen untuk Irisan
 
-$$ A \cap \overline{A} = \emptyset $$
+$$A \cap \overline{A} = \emptyset$$
 
 **Langkah-langkah:**
 
-1. **Hitung komplemen dari $ A $ di ruang semesta $ U $ (sudah dihitung di atas):**
+1. **Hitung komplemen dari $A$ di ruang semesta $U$ (sudah dihitung di atas):**
 
-   $$ \overline{A} = \{1, 3, 5, 7, 8\} $$
+   $$\overline{A} = \{1, 3, 5, 7, 8\}$$
 
-2. **Hitung irisan $ A \cap \overline{A} $:**
+2. **Hitung irisan $A \cap \overline{A}$:**
 
-   $$ A \cap \overline{A} = \{2, 4, 6\} \cap \{1, 3, 5, 7, 8\} = \emptyset $$
+   $$A \cap \overline{A} = \{2, 4, 6\} \cap \{1, 3, 5, 7, 8\} = \emptyset$$
 
    Dengan demikian:
 
-   $$ A \cap \overline{A} = \emptyset $$
+   $$A \cap \overline{A} = \emptyset$$
 
    Jadi, hukum komplemen untuk irisan terbukti benar.
 
@@ -224,10 +226,10 @@ $$ A \cap \overline{A} = \emptyset $$
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum komplemen dalam teori himpunan benar:
 
 - **Hukum Komplemen untuk Gabungan:** 
-  $$ A \cup \overline{A} = U $$
+  $$A \cup \overline{A} = U$$
   
 - **Hukum Komplemen untuk Irisan:**
-  $$ A \cap \overline{A} = \emptyset $$
+  $$A \cap \overline{A} = \emptyset$$
 
 Hukum ini membantu dalam memahami bagaimana komplemen himpunan berinteraksi dengan himpunan itu sendiri dan ruang semesta.
 
