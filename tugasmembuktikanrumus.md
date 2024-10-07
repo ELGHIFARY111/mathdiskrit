@@ -175,7 +175,7 @@ Hukum Komplemen dalam teori himpunan menyatakan dua hal berikut:
 
 Misalkan kita memiliki himpunan berikut:
 
--$A = \{2, 4, 6\}$
+- $A = \{2, 4, 6\}$
 - Ruang semesta$U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
 
 #### a. Hukum Komplemen untuk Gabungan
