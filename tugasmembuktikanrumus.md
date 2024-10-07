@@ -13,12 +13,12 @@ $$\overline{A \cup B} = \overline{A} \cap \overline{B}$$
 
 Misalkan kita memiliki dua himpunan berikut:
 
--$A = \{2, 4, 6\}$
--$B = \{4, 5, 7\}$
+- $A = \{2, 4, 6\}$
+- $B = \{4, 5, 7\}$
 
 Dan ruang semesta$U$adalah:
 
--$U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
+- $U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
 
 #### a. Hukum De Morgan untuk Irisan
 
@@ -36,8 +36,8 @@ $$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
 
 3. **Hitung komplemen dari masing-masing himpunan$A$dan$B$:**
 
-   -$$\overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\}$$
-   -$$\overline{B} = U - B = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4, 5, 7\} = \{1, 2, 3, 6, 8\}$$
+   - $$\overline{A} = U - A = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{2, 4, 6\} = \{1, 3, 5, 7, 8\}$$
+   - $$\overline{B} = U - B = \{1, 2, 3, 4, 5, 6, 7, 8\} - \{4, 5, 7\} = \{1, 2, 3, 6, 8\}$$
 
 4. **Hitung gabungan dari$( \overline{A} )$dan$( \overline{B} )$:**
 
@@ -45,8 +45,8 @@ $$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
 
 5. **Bandingkan hasilnya:**
 
-   -$$\overline{(A \cap B)} = \{1, 2, 3, 5, 6, 7, 8\}$$
-   -$$\overline{A} \cup \overline{B} = \{1, 2, 3, 5, 6, 7, 8\}$$
+   - $$\overline{(A \cap B)} = \{1, 2, 3, 5, 6, 7, 8\}$$
+   - $$\overline{A} \cup \overline{B} = \{1, 2, 3, 5, 6, 7, 8\}$$
 
 Dengan demikian, kita dapat lihat bahwa:
 $$\overline{(A \cap B)} = \overline{A} \cup \overline{B}$$
@@ -67,14 +67,14 @@ $$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 
 3. **Hitung irisan dari$\overline{A}$dan$\overline{B}$:**
 
-   -$$\overline{A} = \{1, 3, 5, 7, 8\}$$
-   -$$\overline{B} = \{1, 2, 3, 6, 8\}$$
-   -$$\overline{A} \cap \overline{B} = \{1, 3, 5, 7, 8\} \cap \{1, 2, 3, 6, 8\} = \{1, 3, 8\}$$
+   - $$\overline{A} = \{1, 3, 5, 7, 8\}$$
+   - $$\overline{B} = \{1, 2, 3, 6, 8\}$$
+   - $$\overline{A} \cap \overline{B} = \{1, 3, 5, 7, 8\} \cap \{1, 2, 3, 6, 8\} = \{1, 3, 8\}$$
 
 4. **Bandingkan hasilnya:**
 
-   -$$\overline{(A \cup B)} = \{1, 3, 8\}$$
-   -$$\overline{A} \cap \overline{B} = \{1, 3, 8\}$$
+   - $$\overline{(A \cup B)} = \{1, 3, 8\}$$
+   - $$\overline{A} \cap \overline{B} = \{1, 3, 8\}$$
 
 Dengan demikian, kita dapat lihat bahwa:
 $$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
@@ -101,12 +101,12 @@ Hukum Absorpsi dalam teori himpunan menyatakan dua hal berikut:
 
 Misalkan kita memiliki dua himpunan berikut:
 
--$A = \{1, 2, 3\}$
--$B = \{3, 4, 5\}$
+- $A = \{1, 2, 3\}$
+- $B = \{3, 4, 5\}$
 
 Dan ruang semesta$U$adalah:
 
--$U = \{1, 2, 3, 4, 5, 6\}$
+- $U = \{1, 2, 3, 4, 5, 6\}$
 
 #### a. Hukum Absorpsi untuk Gabungan
 
