@@ -1,6 +1,6 @@
-<h1>Tugas Membuktikan Rumus</h1>
+<h>Tugas Membuktikan Rumus</h1>
 
-### 1. Hukum De Morgan
+# 1. Hukum De Morgan
 
 Hukum De Morgan menyatakan bahwa:
 
@@ -9,7 +9,7 @@ $$\overline{A \cup B} = \overline{A} \cap \overline{B}$$
 
 <p><strong>PEMBUKTIAN</strong></p>
 
-### Contoh Hukum De Morgan dengan Himpunan
+## Contoh Hukum De Morgan dengan Himpunan
 
 Misalkan kita memiliki dua himpunan berikut:
 
@@ -20,7 +20,7 @@ Dan ruang semesta$U$adalah:
 
 - $U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
 
-#### a. Hukum De Morgan untuk Irisan
+### a. Hukum De Morgan untuk Irisan
 
 $$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
 
@@ -51,7 +51,7 @@ $$\overline{A \cap B} = \overline{A} \cup \overline{B}$$
 Dengan demikian, kita dapat lihat bahwa:
 $$\overline{(A \cap B)} = \overline{A} \cup \overline{B}$$
 
-#### b. Hukum De Morgan untuk Gabungan
+### b. Hukum De Morgan untuk Gabungan
 
 $$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 
@@ -79,13 +79,13 @@ $$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 Dengan demikian, kita dapat lihat bahwa:
 $$\overline{(A \cup B)} = \overline{A} \cap \overline{B}$$
 
-### Kesimpulan
+## Kesimpulan
 
 Kedua hukum De Morgan terbukti benar dengan contoh ini.
 
 ---
 
-### 2. Hukum Absorption
+# 2. Hukum Absorption
 
 Hukum Absorpsi dalam teori himpunan menyatakan dua hal berikut:
 
@@ -97,7 +97,7 @@ Hukum Absorpsi dalam teori himpunan menyatakan dua hal berikut:
 
  $$A \cap (A \cup B) = A$$
 
-### Contoh Hukum Absorpsi dengan Himpunan
+## Contoh Hukum Absorpsi dengan Himpunan
 
 Misalkan kita memiliki dua himpunan berikut:
 
@@ -108,7 +108,7 @@ Dan ruang semesta$U$adalah:
 
 - $U = \{1, 2, 3, 4, 5, 6\}$
 
-#### a. Hukum Absorpsi untuk Gabungan
+### a. Hukum Absorpsi untuk Gabungan
 
 $$A \cup (A \cap B) = A$$
 
@@ -128,7 +128,7 @@ $$A \cup (A \cap B) = A$$
 
    Jadi, hukum absorpsi untuk gabungan terbukti benar.
 
-#### b. Hukum Absorpsi untuk Irisan
+### b. Hukum Absorpsi untuk Irisan
 
 $$A \cap (A \cup B) = A$$
 
@@ -148,7 +148,7 @@ $$A \cap (A \cup B) = A$$
 
    Jadi, hukum absorpsi untuk irisan terbukti benar.
 
-### Kesimpulan
+## Kesimpulan
 
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum absorpsi dalam teori himpunan benar:
 
@@ -159,7 +159,7 @@ Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum absorpsi dalam
 
 ---
 
-### 3. Hukum Komplemen
+## 3. Hukum Komplemen
 
 Hukum Komplemen dalam teori himpunan menyatakan dua hal berikut:
 
@@ -171,14 +171,14 @@ Hukum Komplemen dalam teori himpunan menyatakan dua hal berikut:
 
  $$A \cap \overline{A} = \emptyset$$
 
-### Contoh Hukum Komplemen dengan Himpunan
+## Contoh Hukum Komplemen dengan Himpunan
 
 Misalkan kita memiliki himpunan berikut:
 
 - $A = \{2, 4, 6\}$
 - Ruang semesta$U = \{1, 2, 3, 4, 5, 6, 7, 8\}$
 
-#### a. Hukum Komplemen untuk Gabungan
+### a. Hukum Komplemen untuk Gabungan
 
 $$A \cup \overline{A} = U$$
 
@@ -198,7 +198,7 @@ $$A \cup \overline{A} = U$$
 
    Jadi, hukum komplemen untuk gabungan terbukti benar.
 
-#### b. Hukum Komplemen untuk Irisan
+### b. Hukum Komplemen untuk Irisan
 
 $$A \cap \overline{A} = \emptyset$$
 
@@ -218,7 +218,7 @@ $$A \cap \overline{A} = \emptyset$$
 
    Jadi, hukum komplemen untuk irisan terbukti benar.
 
-### Kesimpulan
+## Kesimpulan
 
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum komplemen dalam teori himpunan benar:
 
