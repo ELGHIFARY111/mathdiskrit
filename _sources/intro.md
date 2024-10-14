@@ -1,9 +1,15 @@
 # Welcome to my Jupyter Book
+<center>
 
-Nama           : MOHAMMAD ELGHIFARY
-NIM            : 240411100108
-Kelas          : MTK DISKRET IF 2D
-Dosen Pengampu : Mula'ab, S.Si., M.Kom.
+**CATATAN MTK DISKRET**<br>
+**UNIVERSITAS TRUNOJOYO MADURA**<br>
+
+![image](logoutm.png)
+**Nama           : MOHAMMAD ELGHIFARY**<br>
+**NIM            : 240411100108**<br>
+**Jurusan        : Teknik Informatika**<br>
+**Kelas          : MTK DISKRET IF 2D**<br>
+**Dosen Pengampu : Mula'ab, S.Si., M.Kom.**<br>
 
 SELAMAT DATANG DI JUPYTERBOOK SAYA INI ADALAH TEMPAT SAYA MENYIMPAN TUGAS DAN CATATAN.
 
