@@ -2,22 +2,25 @@
 title: boolean
 
 ---
-
-# aljabar boolean
+# boolean
+## aljabar boolean
 Aljabar Boolean adalah sistem matematika untuk manipulasi variabel yang dapat memiliki salah satu dari dua nilai.  
 Dalam logika formal, nilai-nilai ini adalah "benar" dan "salah."  
 Dalam sistem digital, nilai-nilai ini adalah "nyala" dan "mati," 1 dan 0, atau "tinggi" dan "rendah."  
 Ekspresi Boolean dibuat dengan melakukan operasi pada variabel Boolean.  
 Operator Boolean yang umum termasuk AND (AND), (OR), dan (NOT).
 
-| Identity Name | AND FORM | OR FORM | NOT FORM |
-| ------------- | -------- | ------- | -------- |
-| Text          | Text     | Text    |          |
-| Text          | Text     | Text    |          |
-| Text          | Text     | Text    |          |
-| Text          | Text     | Text    |          |
+Berikut adalah pengisian tabel berdasarkan kombinasi variabel Boolean \( x \) dan \( y \):
 
-## fungsi boolean
+|  x  |  y  | AND FORM       | OR FORM        | NOT FORM       |
+| --- | --- | --------------- | --------------- | --------------- |
+|  0  |  0  | \( 0 \land 0 = 0 \) | \( 0 \lor 0 = 0 \) | \( \neg 0 = 1 \) |
+|  0  |  1  | \( 0 \land 1 = 0 \) | \( 0 \lor 1 = 1 \) | \( \neg 0 = 1 \) |
+|  1  |  0  | \( 1 \land 0 = 0 \) | \( 1 \lor 0 = 1 \) | \( \neg 1 = 0 \) |
+|  1  |  1  | \( 1 \land 1 = 1 \) | \( 1 \lor 1 = 1 \) | \( \neg 1 = 0 \) |
+
+
+### fungsi boolean
 Sebuah fungsi Boolean memiliki: 
 Setidaknya satu variabel Boolean, 
 Setidaknya satu operator Boolean, dan 
@@ -37,7 +40,7 @@ Fungsi ini menghasilkan output yang juga merupakan anggota dari himpunan {0,1}.
 |Absorption Law De Morgan' Law|$x(x+y)=x$ atau $\overline {(xy)}=\overline {x}+\overline {y}$ |$x+xy=x$ atau $\overline {(x+y)}=\overline {x}\overline {y}$                   |
 |Double Complemen Law|$\overline {(\overline{x})}=x$|$\overline {(\overline{x})}=x$                     |
 
-# Logic gates
+## Logic gates
 Fungsi Boolean diimplementasikan dalam sirkuit komputer digital yang disebut gerbang (gates).  
 
 Gerbang adalah perangkat elektronik yang menghasilkan hasil berdasarkan dua atau lebih nilai input.  
@@ -50,7 +53,7 @@ Tiga gerbang AND, OR, XOR, dan  NOT.
 
 
 
-## Tabel Gerbang Logika
+### Tabel Gerbang Logika
 
 | Nama Gerbang | Simbol IEC | Simbol Amerika | Fungsi / Karakteristik | Tabel Kebenaran |
 |--------------|------------|----------------|------------------------|-----------------|
@@ -97,7 +100,6 @@ Keluaran dari half adder dapat dinyatakan dengan rumus berikut:
 - $Sum (S): ( S = A \oplus B )$
 - $Carry (C): ( C = A \cdot B )$
 
-# Referensi
 ## Referensi
 
 

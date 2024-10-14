@@ -1,11 +1,19 @@
-# Welcome to your Jupyter Book
+# Welcome to my Jupyter Book
+<center>
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+**CATATAN MTK DISKRET**<br>
+**UNIVERSITAS TRUNOJOYO MADURA**<br>
+<br>
+![image](logoutm.png)
+<br>
+<br>
+**Nama           : MOHAMMAD ELGHIFARY**<br>
+**NIM            : 240411100108**<br>
+**Jurusan        : Teknik Informatika**<br>
+**Kelas          : MTK DISKRET IF 2D**<br>
+**Dosen Pengampu : Mula'ab, S.Si., M.Kom.**<br>
 
-Check out the content pages bundled with this sample book to see more.
+SELAMAT DATANG DI JUPYTERBOOK SAYA INI ADALAH TEMPAT SAYA MENYIMPAN TUGAS DAN CATATAN.
 
 ```{tableofcontents}
 ```
