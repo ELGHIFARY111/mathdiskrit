@@ -155,9 +155,9 @@ $$A \cap (A \cup B) = A$$
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum absorpsi dalam teori himpunan benar:
 
 - **Hukum Absorpsi untuk Gabungan:** 
- $$A \cup (A \cap B) = A$$
+ $A \cup (A \cap B) = A$
 - **Hukum Absorpsi untuk Irisan:** 
- $$A \cap (A \cup B) = A$$
+ $A \cap (A \cup B) = A$
 
 ---
 
@@ -225,10 +225,10 @@ $$A \cap \overline{A} = \emptyset$$
 Dengan menggunakan contoh ini, kita telah membuktikan bahwa hukum komplemen dalam teori himpunan benar:
 
 - **Hukum Komplemen untuk Gabungan:** 
- $$A \cup \overline{A} = U$$
+ $A \cup \overline{A} = U$
   
 - **Hukum Komplemen untuk Irisan:**
- $$A \cap \overline{A} = \emptyset$$
+ $A \cap \overline{A} = \emptyset$
 
 Hukum ini membantu dalam memahami bagaimana komplemen himpunan berinteraksi dengan himpunan itu sendiri dan ruang semesta.
 

@@ -3,8 +3,9 @@
 
 **CATATAN MTK DISKRET**<br>
 **UNIVERSITAS TRUNOJOYO MADURA**<br>
-
+<br>
 ![image](logoutm.png)
+<br>
 <br>
 **Nama           : MOHAMMAD ELGHIFARY**<br>
 **NIM            : 240411100108**<br>
