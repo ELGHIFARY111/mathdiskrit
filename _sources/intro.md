@@ -1,4 +1,4 @@
-# Welcome to my Jupyter Book
+# HOME
 <center>
 
 **CATATAN MTK DISKRET**<br>
