@@ -16,10 +16,10 @@ Materi tentang **centrality dalam graf graf** (graph centrality) merupakan salah
 ### **1. Degree Centrality**
 - **Definisi**: Mengukur jumlah hubungan langsung (edges) yang dimiliki suatu simpul.
 - **Rumus**: 
-  $\[
+  $[
   C_D(v) = \frac{\text{degree}(v)}{n-1}
-  \]$
-  di mana $\(n\)$ adalah jumlah simpul dalam graf, dan $\(\text{degree}(v)\)$ adalah jumlah tetangga simpul $\(v\)$.
+  ]$
+  di mana $(n)$ adalah jumlah simpul dalam graf, dan $(\text{degree}(v))$ adalah jumlah tetangga simpul $(v)$.
 - Contoh Aplikasi:
 Jaringan Sosial:
 Dalam media sosial, simpul dengan degree centrality tinggi adalah akun yang memiliki banyak koneksi langsung, seperti teman atau pengikut.
@@ -38,12 +38,12 @@ Tidak relevan untuk jaringan di mana lintasan tidak langsung lebih penting.
 ### **2. Betweenness Centrality**
 - **Definisi**: Mengukur seberapa sering sebuah simpul menjadi jembatan (penghubung) antara pasangan simpul lainnya.
 - **Rumus**:
-  $\[
+  $[
   C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
-  \]$
+  ]$
   di mana:
-  - $\(\sigma_{st}\)$ adalah jumlah lintasan terpendek antara simpul $\(s\)$ dan $\(t\)$.
-  - $\(\sigma_{st}(v)\)$ adalah jumlah lintasan terpendek yang melalui $\(v\)$.
+  - $(\sigma_{st})$ adalah jumlah lintasan terpendek antara simpul $(s)$ dan $(t)$.
+  - $(\sigma_{st}(v))$ adalah jumlah lintasan terpendek yang melalui $(v)$.
 - **Kegunaan**:
   - Menentukan simpul yang memiliki peran penting dalam pengaliran informasi di jaringan.
 Contoh Aplikasi:
@@ -64,10 +64,10 @@ Tidak mempertimbangkan koneksi langsung simpul itu sendiri.
 ### **3. Closeness Centrality**
 - **Definisi**: Mengukur kedekatan suatu simpul dengan semua simpul lain dalam graf.
 - **Rumus**:
-  $\[
+  $[
   C_C(v) = \frac{n-1}{\sum_{u \neq v} d(v, u)}
-  \]$
-  di mana $\(d(v, u)\)$ adalah jarak terpendek antara simpul $\(v\)$ dan $\(u\)$.
+  ]$
+  di mana $(d(v, u))$ adalah jarak terpendek antara simpul $(v)$ dan $(u)$.
 - **Kegunaan**:
   - Menunjukkan simpul yang paling cepat menjangkau simpul lain dalam graf.
   - Sering digunakan dalam analisis jaringan komunikasi.

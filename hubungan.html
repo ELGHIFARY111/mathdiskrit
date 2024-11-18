@@ -399,10 +399,10 @@ document.write(`
 <ul class="simple">
 <li><p><strong>Definisi</strong>: Mengukur jumlah hubungan langsung (edges) yang dimiliki suatu simpul.</p></li>
 <li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\(\[
+<span class="math notranslate nohighlight">\([
 C_D(v) = \frac{\text{degree}(v)}{n-1}
-\]\)</span>
-di mana <span class="math notranslate nohighlight">\(\(n\)\)</span> adalah jumlah simpul dalam graf, dan <span class="math notranslate nohighlight">\(\(\text{degree}(v)\)\)</span> adalah jumlah tetangga simpul <span class="math notranslate nohighlight">\(\(v\)\)</span>.</p></li>
+]\)</span>
+di mana <span class="math notranslate nohighlight">\((n)\)</span> adalah jumlah simpul dalam graf, dan <span class="math notranslate nohighlight">\((\text{degree}(v))\)</span> adalah jumlah tetangga simpul <span class="math notranslate nohighlight">\((v)\)</span>.</p></li>
 <li><p>Contoh Aplikasi:
 Jaringan Sosial:
 Dalam media sosial, simpul dengan degree centrality tinggi adalah akun yang memiliki banyak koneksi langsung, seperti teman atau pengikut.
@@ -424,13 +424,13 @@ Tidak relevan untuk jaringan di mana lintasan tidak langsung lebih penting.</p><
 <ul class="simple">
 <li><p><strong>Definisi</strong>: Mengukur seberapa sering sebuah simpul menjadi jembatan (penghubung) antara pasangan simpul lainnya.</p></li>
 <li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\(\[
+<span class="math notranslate nohighlight">\([
 C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
-\]\)</span>
+]\)</span>
 di mana:</p>
 <ul>
-<li><p><span class="math notranslate nohighlight">\(\(\sigma_{st}\)\)</span> adalah jumlah lintasan terpendek antara simpul <span class="math notranslate nohighlight">\(\(s\)\)</span> dan <span class="math notranslate nohighlight">\(\(t\)\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\(\(\sigma_{st}(v)\)\)</span> adalah jumlah lintasan terpendek yang melalui <span class="math notranslate nohighlight">\(\(v\)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\((\sigma_{st})\)</span> adalah jumlah lintasan terpendek antara simpul <span class="math notranslate nohighlight">\((s)\)</span> dan <span class="math notranslate nohighlight">\((t)\)</span>.</p></li>
+<li><p><span class="math notranslate nohighlight">\((\sigma_{st}(v))\)</span> adalah jumlah lintasan terpendek yang melalui <span class="math notranslate nohighlight">\((v)\)</span>.</p></li>
 </ul>
 </li>
 <li><p><strong>Kegunaan</strong>:</p>
@@ -459,10 +459,10 @@ Tidak mempertimbangkan koneksi langsung simpul itu sendiri.</p></li>
 <ul class="simple">
 <li><p><strong>Definisi</strong>: Mengukur kedekatan suatu simpul dengan semua simpul lain dalam graf.</p></li>
 <li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\(\[
+<span class="math notranslate nohighlight">\([
 C_C(v) = \frac{n-1}{\sum_{u \neq v} d(v, u)}
-\]\)</span>
-di mana <span class="math notranslate nohighlight">\(\(d(v, u)\)\)</span> adalah jarak terpendek antara simpul <span class="math notranslate nohighlight">\(\(v\)\)</span> dan <span class="math notranslate nohighlight">\(\(u\)\)</span>.</p></li>
+]\)</span>
+di mana <span class="math notranslate nohighlight">\((d(v, u))\)</span> adalah jarak terpendek antara simpul <span class="math notranslate nohighlight">\((v)\)</span> dan <span class="math notranslate nohighlight">\((u)\)</span>.</p></li>
 <li><p><strong>Kegunaan</strong>:</p>
 <ul>
 <li><p>Menunjukkan simpul yang paling cepat menjangkau simpul lain dalam graf.</p></li>
