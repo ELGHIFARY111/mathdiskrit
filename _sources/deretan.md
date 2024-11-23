@@ -1,9 +1,9 @@
 ---
-title: Deretan (Sequence)
+title: Deretan
 
 ---
 
-# Deretan (Sequence)
+# Deretan
 
 Deretan adalah suatu urutan atau susunan elemen atau objek yang disusun secara teratur berdasarkan suatu aturan tertentu. Elemen dalam deretan biasanya berupa angka, huruf, simbol, atau objek lainnya, dan urutannya dapat didasarkan pada pola, nilai, atau hubungan tertentu.
 
@@ -15,7 +15,7 @@ Contoh:
 
 **Notasi deretan**: {a_n}
 
-# Deretan Umumnya Dinyatakan dalam Suatu Formula, Misalnya:
+## Deretan Umumnya Dinyatakan dalam Suatu Formula, Misalnya:
 
 - $a_n = 2n$
 - $a_n = \frac{1}{n}$
@@ -30,14 +30,14 @@ Misalnya:
 
 ---
 
-# Contoh-Contoh Deretan dan Formulanya:
+## Contoh-Contoh Deretan dan Formulanya:
 
-## Deret Aritmetika
+### Deret Aritmetika
 
 Deret dengan pola kenaikan atau penurunan tetap.
 - Contoh: 2, 5, 8, 11, 14, ...
 
-### Rumus Suku ke-n:
+#### Rumus Suku ke-n:
 $a_n = a + (n - 1) \cdot b$
 
 Dimana:
@@ -47,12 +47,12 @@ Dimana:
 
 ---
 
-## Deret Geometri
+### Deret Geometri
 
 Deret dengan pola kelipatan tetap.
 - Contoh: 3, 6, 12, 24, 48, ...
 
-### Rumus Suku ke-n:
+#### Rumus Suku ke-n:
 $a_n = a \cdot r^{(n-1)}$
 
 Dimana:
@@ -62,37 +62,37 @@ Dimana:
 
 ---
 
-## Deret Bilangan Kuadrat
+### Deret Bilangan Kuadrat
 
 Deret dengan pola nilai berupa kuadrat bilangan bulat.
 - Contoh: 1, 4, 9, 16, 25, ...
 
-### Rumus Suku ke-n:
+#### Rumus Suku ke-n:
 $a_n = n^2$
 
 ---
 
-## Deret Bilangan Kubik
+### Deret Bilangan Kubik
 
 Deret dengan pola nilai berupa kubik bilangan bulat.
 - Contoh: 1, 8, 27, 64, 125, ...
 
-### Rumus Suku ke-n:
+#### Rumus Suku ke-n:
 $a_n = n^3$
 
 ---
 
-## Deret Fibonacci
+### Deret Fibonacci
 
 Deret dengan pola di mana setiap suku merupakan jumlah dua suku sebelumnya.
 - Contoh: 0, 1, 1, 2, 3, 5, 8, ...
 
-### Rumus Suku ke-n (Rekursif):
+#### Rumus Suku ke-n (Rekursif):
 $F_n = F_{n-1} + F_{n-2}, \quad F_0 = 0, \quad F_1 = 1$
 
 ---
 
-## Deret String
+### Deret String
 
 Deret berupa rangkaian karakter.
 - **String** adalah deretan berhingga karakter berbentuk $a_1a_2a_3 \ldots a_n$
@@ -102,7 +102,7 @@ Deret berupa rangkaian karakter.
 
 ---
 
-# Penjumlahan Deretan
+## Penjumlahan Deretan
 
 Penjumlahan deretan adalah proses menjumlahkan elemen-elemen dalam suatu deretan. Misalkan kita memiliki deretan $a_m, a_{m+1}, a_{m+2}, \ldots, a_n$, maka penjumlahannya adalah:
 
@@ -119,7 +119,7 @@ Dimana:
 
 ---
 
-## Contoh Penjumlahan Deretan
+### Contoh Penjumlahan Deretan
 
 **Contoh 1: Hitunglah nilai $\sum_{k=1}^{5} k^2$**
 
@@ -138,9 +138,9 @@ $\sum_{k=1}^{5} k^2 = \sum_{k=0}^{4} (k + 1)^2$
 ---
 
 
-## Tabel Formula Penjumlahan Berguna
+### Tabel Formula Penjumlahan Berguna
 
-### TUGAS PEMBUKTIAN
+#### TUGAS PEMBUKTIAN
 Dari 3 rumus di bawah ini, buktikan:
 | Sum | Closed Form | 
 | --- | ----------- | 
@@ -151,7 +151,7 @@ Dari 3 rumus di bawah ini, buktikan:
 | $\sum_{k=0}^{\infty} x^k,\|x\| < 1$ | $\frac{1}{1-x}$ | 
 | $\sum_{k=1}^{\infty} kx^{k-1},\|x\| < 1$ | $\frac{1}{(1-x)^2}$ |
 
-### Contoh Penjumlahan Deretan
+#### Contoh Penjumlahan Deretan
 
 **Contoh 5: Hitung nilai $\sum_{k=50}^{100} k^2$**
 
@@ -174,14 +174,14 @@ $\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$
 
 
 $\sum_{k=50}^{100} k^2 = \frac{(100)(101)(201)}{6} - \frac{(49)(50)(99)}{6} = 338350 - 40425 = 297925$
-# Sumasi Ganda
+## Sumasi Ganda
 
 Di dalam algoritma, kita perlu menghitung berapa kali suatu operasi tertentu dilakukan di dalam sebuah kalang bersarang (nested loop). Penjumlahan semua operasi di dalam kalang bersarang dinyatakan dalam bentuk sumasi ganda.
 Contoh: $\sum_{i=1}^{4} \sum_{j=1}^{3} ij$
 Untuk menghitung sumasi ganda, mula-mula ekspansi sumasi terdalam, lalu dilanjutkan dengan sumasi terluar:
 $\sum_{i=1}^{4} \sum_{j=1}^{3} ij = \sum_{i=1}^{4} (i \cdot 1 + i \cdot 2 + i \cdot 3) = \sum_{i=1}^{4} 6i = 6 \cdot 1 + 6 \cdot 2 + 6 \cdot 3 + 6 \cdot 4 = 6 + 12 + 18 + 24 = 60$
 
-## Contoh Penggunaan Sumasi Ganda
+### Contoh Penggunaan Sumasi Ganda
 
 Berapa kali operasi + dilakukan di dalam algoritma di bawah ini?
 
@@ -213,7 +213,7 @@ $= \sum_{j=1}^{10} j$
 
 $= \frac{10(10+1)}{2} = 55$
 
-### 1. Tentukan nilai $\sum_{k=1}^{8} 2^k + \sum_{k=2}^{8} (-3)^k$
+#### 1. Tentukan nilai $\sum_{k=1}^{8} 2^k + \sum_{k=2}^{8} (-3)^k$
 Jawaban:
 
 
@@ -236,7 +236,7 @@ $\sum_{k=1}^{8} 2^k + \sum_{k=2}^{8} (-3)^k = 510 + 4923 = 5433$
 
 
 
-### 2. Tentukan nilai $\sum_{i=0}^{2} \sum_{j=0}^{3} (2i + 3j)$
+#### 2. Tentukan nilai $\sum_{i=0}^{2} \sum_{j=0}^{3} (2i + 3j)$
 Jawaban:
 
 
@@ -266,7 +266,7 @@ $= 18 + 26 + 34 = 78$
 
 
 
-### 3. Tentukan nilai $\sum_{i=0}^{3} \sum_{j=0}^{2} i$
+#### 3. Tentukan nilai $\sum_{i=0}^{3} \sum_{j=0}^{2} i$
 Jawaban:
 
 
@@ -277,22 +277,22 @@ $\sum_{i=0}^{3} \sum_{j=0}^{2} i = \sum_{i=0}^{3} [i \cdot 3] = 3 \sum_{i=0}^{3}
 
 $= 3 (0 + 1 + 2 + 3) = 3 \cdot 6 = 18$
 
-# Rekursi
+## Rekursi
 
 - Sebuah objek dikatakan rekursif (recursive) jika ia didefinisikan dalam terminologi dirinya sendiri.
 - Proses mendefinisikan objek dalam terminologi dirinya sendiri disebut rekursi (recursion).
 - Perhatikan tiga buah gambar pada tiga slide berikut ini.
-# Fungsi Rekursif
+## Fungsi Rekursif
 
-### Basis
+#### Basis
 - Bagian yang berisi nilai fungsi yang terdefinisi secara eksplisit.
 - Bagian ini juga sekaligus menghentikan rekursif (dan memberikan sebuah nilai yang terdefinisi pada fungsi rekursif).
 
-### Rekurens
+#### Rekurens
 - Bagian ini mendefinisikan fungsi dalam terminologi dirinya sendiri.
 - Berisi kaidah untuk menemukan nilai fungsi pada suatu input dari nilai-nilai lainnya pada input yang lebih kecil.
 
-### Contoh 6
+#### Contoh 6
 
 Diberikan fungsi rekursif $f(n)$ sebagai berikut:
 
@@ -326,7 +326,7 @@ $= 2 \cdot 52 + 4$
 
 $= 108$
 
-### Contoh 7
+#### Contoh 7
 
 Nyatakan $n!$ dalam definisi rekursif
 
@@ -345,7 +345,7 @@ $= 5 \times 4 \times 3 \times 2 \times 1 \times 0!$
 $= 5 \times 4 \times 3 \times 2 \times 1 \times 1$
 $= 120$
 
-### Algoritma Menghitung Faktorial
+#### Algoritma Menghitung Faktorial
 
 function Faktorial (input n : integer) -> integer
 { 
@@ -364,7 +364,7 @@ else
     return n * Faktorial(n - 1)  { rekurens }
 end
 
-### Contoh 8: Barisan Fibonacci
+#### Contoh 8: Barisan Fibonacci
 
 Barisan Fibonacci didefinisikan secara rekursif sebagai berikut:
 
@@ -374,7 +374,7 @@ $f_n = \begin{cases}
 f_{n-1} + f_{n-2}, & n > 1 
 \end{cases}$
 
-### Contoh 9: Fungsi (Polinom) Chebyshev
+#### Contoh 9: Fungsi (Polinom) Chebyshev
 
 Fungsi polinom Chebyshev didefinisikan sebagai:
 
@@ -383,7 +383,7 @@ $T(n, x) = \begin{cases}
 x, & n = 1 \\
 2x \cdot T(n-1, x) - T(n-2, x), & n > 1 
 \end{cases}$
-# Contoh 10
+## Contoh 10
 
 Sumasi $\sum_{k=0}^{n} a_k$ didefinisikan secara rekursif sebagai berikut:
 
@@ -398,18 +398,18 @@ sehingga
 $\sum_{k=0}^{n} a_k = \begin{cases} a_0, & n = 0 \\ \left( \sum_{k=0}^{n-1} a_k \right) + a_n, & n > 0 \end{cases}$
 
 
-# Struktur Rekursif
+## Struktur Rekursif
 
 Struktur data yang penting dalam komputer adalah pohon biner (binary tree).
 
 - Pohon biner adalah struktur data rekursif yang terdiri dari simpul (node) yang dihubungkan oleh cabang (branch). Setiap simpul memiliki paling banyak dua anak (child), yang disebut anak kiri (left child) dan anak kanan (right child).
 
-## Definisi
+### Definisi
 
 1. Sebuah pohon kosong adalah sebuah pohon biner.
 2. Sebuah pohon biner adalah simpul akar (root) yang memiliki dua pohon biner anak, yaitu anak kiri dan anak kanan.
 
-### Contoh Pohon Biner:
+#### Contoh Pohon Biner:
 
 Simpul | Anak Kiri | Anak Kanan
 ------ | --------- | ----------
@@ -419,11 +419,11 @@ C      | F         | G
 
 Pada tabel di atas, simpul A adalah akar yang memiliki anak kiri B dan anak kanan C. Simpul B memiliki anak kiri D dan anak kanan E, dan simpul C memiliki anak kiri F dan anak kanan G.
 
-## Traversal Pohon Biner
+### Traversal Pohon Biner
 
 Traversal adalah proses mengunjungi setiap simpul dalam pohon biner.
 
-### Tiga jenis traversal pohon biner:
+#### Tiga jenis traversal pohon biner:
 1. **Inorder Traversal (Traversal dalam urutan):**
    - Kunjungi anak kiri
    - Kunjungi simpul akar
@@ -439,7 +439,7 @@ Traversal adalah proses mengunjungi setiap simpul dalam pohon biner.
    - Kunjungi anak kanan
    - Kunjungi simpul akar
 
-### Pohon Biner
+#### Pohon Biner
 
 Simpul (node) pada pohon biner mempunyai paling banyak dua buah anak.
 
@@ -447,7 +447,7 @@ Simpul (node) pada pohon biner mempunyai paling banyak dua buah anak.
 - Simpul yang mempunyai anak disebut simpul cabang (branch node) atau simpul dalam (internal node).
 - Simpul yang tidak mempunyai anak disebut simpul daun (leave).
 
-# Pohon Biner Rekursif
+## Pohon Biner Rekursif
 
 Oleh karena itu, pohon dapat didefinisikan secara rekursif sebagai berikut:
 
@@ -465,7 +465,7 @@ $ \quad \quad / \quad \ \ $ $ \quad \ \ \bullet $
 
 
 
-# TUGAS PEMBUKTIAN
+## TUGAS PEMBUKTIAN
 Dari 3 rumus di bawah ini, buktikan:
 | Sum | Closed Form | 
 | --- | ----------- | 
@@ -476,7 +476,7 @@ Dari 3 rumus di bawah ini, buktikan:
 | $\sum_{k=0}^{\infty} x^k,\|x\| < 1$ | $\frac{1}{1-x}$ | 
 | $\sum_{k=1}^{\infty} kx^{k-1},\|x\| < 1$ | $\frac{1}{(1-x)^2}$ |
 
-### 1. Bukti $\sum_{k=0}^{n} ar^k = \frac{ar^{n+1} - a}{r - 1}, \ r \neq 1$
+#### 1. Bukti $\sum_{k=0}^{n} ar^k = \frac{ar^{n+1} - a}{r - 1}, \ r \neq 1$
 
 Bukti ini adalah untuk deret geometri.
 
@@ -506,7 +506,7 @@ $\sum_{k=0}^{n} ar^k = \frac{a(1 - r^{n+1})}{1 - r}$
 
 ---
 
-### 2. Bukti $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$
+#### 2. Bukti $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$
 
 Bukti ini adalah untuk jumlah bilangan bulat dari 1 sampai n.
 
@@ -536,7 +536,7 @@ $\sum_{k=1}^{n} k = \frac{n(n+1)}{2}$
 
 ---
 
-### 3. Bukti $\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$
+#### 3. Bukti $\sum_{k=1}^{n} k^2 = \frac{n(n+1)(2n+1)}{6}$
 
 Bukti ini adalah untuk jumlah bilangan kuadrat dari 1 sampai n.
 
