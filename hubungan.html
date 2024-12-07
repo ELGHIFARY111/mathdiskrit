@@ -137,16 +137,22 @@
     
   </div>
   
-  <div class="sidebar-primary-items__start sidebar-primary__section">
+    <div class="sidebar-primary-items__start sidebar-primary__section">
         <div class="sidebar-primary-item">
 
   
     
   
 
-          <a class="navbar-brand logo" href="intro.html">
-  <img src="./logo.png" alt="Logo" class="logo__image">
-
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My sample book</p>
+  
 </a></div>
         <div class="sidebar-primary-item">
 
@@ -176,6 +182,9 @@
 <li class="toctree-l1"><a class="reference internal" href="boolean.html">boolean</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">hubungan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deretan.html">Deretan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Probabilitas.html">Probabilitas</a></li>
+
+
 </ul>
 
     </div>
@@ -371,9 +380,19 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality"><strong>1. Degree Centrality</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality"><strong>2. Betweenness Centrality</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality"><strong>3. Closeness Centrality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">Social Network Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centrality">Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">1. Degree Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-degree-centrality">Normalisasi Degree Centrality</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">2. Closeness Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">3. Betweenness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-betweenness-centrality">Normalisasi Betweenness Centrality</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -388,98 +407,83 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="hubungan">
 <h1>hubungan<a class="headerlink" href="#hubungan" title="Link to this heading">#</a></h1>
 <p><img alt="image" src="https://hackmd.io/_uploads/SJLbqI_z1x.png" /></p>
-<p>Materi tentang <strong>centrality dalam graf graf</strong> (graph centrality) merupakan salah satu bagian penting dari teori graf dalam ilmu matematika diskret dan ilmu komputer. Centrality adalah konsep yang digunakan untuk mengukur seberapa penting atau terhubungnya suatu simpul (node) dalam sebuah graf. Ada beberapa jenis ukuran centrality yang digunakan, masing-masing dengan pendekatan dan kegunaan yang berbeda:</p>
-<hr class="docutils" />
+<section id="social-network-analysis">
+<h2>Social Network Analysis<a class="headerlink" href="#social-network-analysis" title="Link to this heading">#</a></h2>
+<p>Social Network Analysis (SNA) adalah bidang kajian yang mengeksplorasi hubungan antar manusia menggunakan teori graf. Implementasi SNA membantu menjelaskan relasi atau hubungan antar aktor melalui visualisasi berbentuk graf. Relasi dalam analisis jaringan sosial dihitung menggunakan ukuran <strong>centrality</strong>, sesuai dengan posisi masing-masing aktor di dalam struktur jaringan tersebut.</p>
+<p>Dalam <strong>social network</strong>, terdapat:</p>
+<ul class="simple">
+<li><p><strong>Node</strong>: Mewakili individu atau aktor.</p></li>
+<li><p><strong>Edges</strong>: Relasi atau hubungan antar node.</p></li>
+</ul>
+<p>Jaringan sosial terdiri dari banyak aktor yang saling berhubungan, membentuk peta jaringan sosial yang dinyatakan dengan graf.</p>
+</section>
+<section id="centrality">
+<h2>Centrality<a class="headerlink" href="#centrality" title="Link to this heading">#</a></h2>
+<p>Tidak semua node dalam jaringan adalah penting. <strong>Centrality</strong> digunakan untuk menentukan aktor yang paling penting dalam jaringan, yang dibagi menjadi empat jenis:</p>
+<ol class="arabic simple">
+<li><p><strong>Degree Centrality</strong></p></li>
+<li><p><strong>Closeness Centrality</strong></p></li>
+<li><p><strong>Betweenness Centrality</strong></p></li>
+<li><p><strong>Eigenvector Centrality</strong></p></li>
+</ol>
 <section id="degree-centrality">
-<h2><strong>1. Degree Centrality</strong><a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<h3>1. Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h3>
+<p>Degree centrality adalah jumlah <strong>edges</strong> yang terkoneksi dengan suatu node. Pentingnya node ditentukan oleh jumlah node yang berdekatan dengannya.</p>
+<div class="math notranslate nohighlight">
+\[
+C_D(v) = \deg(v)
+\]</div>
+<section id="normalisasi-degree-centrality">
+<h4>Normalisasi Degree Centrality<a class="headerlink" href="#normalisasi-degree-centrality" title="Link to this heading">#</a></h4>
+<p>Untuk node (v) dengan total (n) node:
+$<span class="math notranslate nohighlight">\(
+C_D^{norm}(v) = \frac{\deg(v)}{n-1}
+\)</span>$</p>
+<p>Contoh:</p>
 <ul class="simple">
-<li><p><strong>Definisi</strong>: Mengukur jumlah hubungan langsung (edges) yang dimiliki suatu simpul.</p></li>
-<li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\([
-C_D(v) = \frac{\text{degree}(v)}{n-1}
-]\)</span>
-di mana <span class="math notranslate nohighlight">\((n)\)</span> adalah jumlah simpul dalam graf, dan <span class="math notranslate nohighlight">\((\text{degree}(v))\)</span> adalah jumlah tetangga simpul <span class="math notranslate nohighlight">\((v)\)</span>.</p></li>
-<li><p>Contoh Aplikasi:
-Jaringan Sosial:
-Dalam media sosial, simpul dengan degree centrality tinggi adalah akun yang memiliki banyak koneksi langsung, seperti teman atau pengikut.
-Sistem Transportasi:
-Dalam jaringan transportasi, simpul dengan degree tinggi dapat mewakili stasiun pusat yang memiliki banyak jalur langsung ke stasiun lain.
-Ekosistem Biologi:
-Pada graf interaksi spesies, simpul dengan degree tinggi adalah spesies yang memiliki banyak interaksi dengan spesies lain.
-Kelebihan:
-Mudah dihitung.
-Memberikan wawasan langsung tentang konektivitas lokal simpul.
-Kekurangan:
-Tidak mempertimbangkan posisi simpul dalam graf secara keseluruhan.
-Tidak relevan untuk jaringan di mana lintasan tidak langsung lebih penting.</p></li>
+<li><p>Degree centrality untuk node 1 adalah (3).</p></li>
+<li><p>Normalisasi degree centrality:
+$<span class="math notranslate nohighlight">\(
+C_D^{norm}(1) = \frac{3}{9-1} = \frac{3}{8}.
+\)</span>$</p></li>
 </ul>
-<hr class="docutils" />
 </section>
-<section id="betweenness-centrality">
-<h2><strong>2. Betweenness Centrality</strong><a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
-<ul class="simple">
-<li><p><strong>Definisi</strong>: Mengukur seberapa sering sebuah simpul menjadi jembatan (penghubung) antara pasangan simpul lainnya.</p></li>
-<li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\([
-C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
-]\)</span>
-di mana:</p>
-<ul>
-<li><p><span class="math notranslate nohighlight">\((\sigma_{st})\)</span> adalah jumlah lintasan terpendek antara simpul <span class="math notranslate nohighlight">\((s)\)</span> dan <span class="math notranslate nohighlight">\((t)\)</span>.</p></li>
-<li><p><span class="math notranslate nohighlight">\((\sigma_{st}(v))\)</span> adalah jumlah lintasan terpendek yang melalui <span class="math notranslate nohighlight">\((v)\)</span>.</p></li>
-</ul>
-</li>
-<li><p><strong>Kegunaan</strong>:</p>
-<ul>
-<li><p>Menentukan simpul yang memiliki peran penting dalam pengaliran informasi di jaringan.
-Contoh Aplikasi:
-Jaringan Komunikasi:
-Simpul dengan betweenness centrality tinggi dapat menjadi simpul kunci dalam menyampaikan informasi antar kelompok.
-Sistem Transportasi:
-Dalam jaringan jalan, simpul dengan betweenness tinggi bisa menjadi kota transit utama.
-Jaringan Sosial:
-Dalam sebuah komunitas, simpul dengan betweenness tinggi sering berfungsi sebagai jembatan yang menghubungkan subkelompok.
-Kelebihan:
-Mampu mengidentifikasi simpul strategis yang mengendalikan aliran informasi atau sumber daya.
-Sangat berguna dalam memahami struktur jaringan secara menyeluruh.
-Kekurangan:
-Perhitungan betweenness centrality sangat mahal secara komputasi untuk graf besar.
-Tidak mempertimbangkan koneksi langsung simpul itu sendiri.</p></li>
-</ul>
-</li>
-</ul>
-<hr class="docutils" />
 </section>
+<hr class="docutils" />
 <section id="closeness-centrality">
-<h2><strong>3. Closeness Centrality</strong><a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
+<h3>2. Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h3>
+<p>Closeness centrality mengukur kedekatan antara satu node dengan node lain dalam jaringan melalui rata-rata jarak terpendek:</p>
+<div class="math notranslate nohighlight">
+\[
+C_C(v) = \frac{1}{\sum_{u \neq v} d(u, v)}
+\]</div>
 <ul class="simple">
-<li><p><strong>Definisi</strong>: Mengukur kedekatan suatu simpul dengan semua simpul lain dalam graf.</p></li>
-<li><p><strong>Rumus</strong>:
-<span class="math notranslate nohighlight">\([
-C_C(v) = \frac{n-1}{\sum_{u \neq v} d(v, u)}
-]\)</span>
-di mana <span class="math notranslate nohighlight">\((d(v, u))\)</span> adalah jarak terpendek antara simpul <span class="math notranslate nohighlight">\((v)\)</span> dan <span class="math notranslate nohighlight">\((u)\)</span>.</p></li>
-<li><p><strong>Kegunaan</strong>:</p>
-<ul>
-<li><p>Menunjukkan simpul yang paling cepat menjangkau simpul lain dalam graf.</p></li>
-<li><p>Sering digunakan dalam analisis jaringan komunikasi.
-Contoh Aplikasi:
-Jaringan Logistik:
-Dalam jaringan distribusi, simpul dengan closeness tinggi menunjukkan lokasi strategis untuk pusat distribusi yang dapat menjangkau semua titik dengan cepat.
-Epidemiologi:
-Dalam graf penyebaran penyakit, simpul dengan closeness tinggi adalah individu atau lokasi yang berpotensi menjadi sumber penyebaran lebih cepat.
-Sistem Informasi:
-Dalam jaringan komputer, simpul dengan closeness tinggi memungkinkan akses data lebih efisien ke seluruh simpul lain.
-Kelebihan:
-Memberikan wawasan tentang efisiensi simpul dalam jaringan.
-Berguna dalam jaringan yang mengutamakan kecepatan aliran informasi.
-Kekurangan:
-Tidak relevan untuk graf yang tidak terhubung secara sempurna (disconnected graph), karena jarak menjadi tak terhingga untuk beberapa pasangan simpul.
-Mengabaikan faktor bobot dalam koneksi (kecuali diimplementasikan untuk graf berbobot).</p></li>
+<li><p>Skor closeness centrality menunjukkan kecepatan penyebaran informasi.</p></li>
+<li><p>Contoh: Node 4 lebih central daripada node 3 karena rata-rata jaraknya lebih kecil.</p></li>
 </ul>
-</li>
-</ul>
+</section>
 <hr class="docutils" />
+<section id="betweenness-centrality">
+<h3>3. Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h3>
+<p>Betweenness centrality mengukur seberapa besar informasi melewati suatu node. Node dengan skor tinggi memainkan peran penting sebagai penghubung dalam jaringan.</p>
+<div class="math notranslate nohighlight">
+\[
+C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
+\]</div>
+<p>Di mana:</p>
+<ul class="simple">
+<li><p>(\sigma_{st}): Jumlah lintasan terpendek antara (s) dan (t).</p></li>
+<li><p>(\sigma_{st}(v)): Jumlah lintasan terpendek antara (s) dan (t) yang melewati (v).</p></li>
+</ul>
+<section id="normalisasi-betweenness-centrality">
+<h4>Normalisasi Betweenness Centrality<a class="headerlink" href="#normalisasi-betweenness-centrality" title="Link to this heading">#</a></h4>
+<div class="math notranslate nohighlight">
+\[
+C_B^{norm}(v) = \frac{C_B(v)}{(n-1)(n-2)/2}
+\]</div>
+<hr class="docutils" />
+</section>
+</section>
 </section>
 </section>
 
@@ -547,9 +551,19 @@ Mengabaikan faktor bobot dalam koneksi (kecuali diimplementasikan untuk graf ber
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality"><strong>1. Degree Centrality</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality"><strong>2. Betweenness Centrality</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality"><strong>3. Closeness Centrality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#social-network-analysis">Social Network Analysis</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#centrality">Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">1. Degree Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-degree-centrality">Normalisasi Degree Centrality</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">2. Closeness Centrality</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">3. Betweenness Centrality</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#normalisasi-betweenness-centrality">Normalisasi Betweenness Centrality</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

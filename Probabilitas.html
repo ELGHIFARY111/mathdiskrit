@@ -1,0 +1,774 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Probabilitas &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=a3416100" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=13237357" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=4a39c7ea"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Probabilitas';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Deretan" href="deretan.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="intro.html">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">My sample book</p>
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    HOME
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="himpunan.html">himpunan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logika.html">Logika Matematika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
+<li class="toctree-l1"><a class="reference internal" href="boolean.html">boolean</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hubungan.html">hubungan</a></li>
+<li class="toctree-l1"><a class="reference internal" href="deretan.html">Deretan</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Probabilitas</a></li>
+
+
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProbabilitas.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Probabilitas.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Probabilitas</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Probabilitas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit-probabilitas-bayesian">Probabilitas Diskrit Probabilitas Bayesian</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-independen">Variabel Independen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-probabilitas">Perhitungan Probabilitas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-sebelumnya">1) Probabilitas Sebelumnya</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihoods">2) Likelihoods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-marginal">3) Probabilitas Marginal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-posterior">4) Probabilitas Posterior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skor-prediksi">Skor Prediksi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan">Perhitungan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-dasar">Probabilitas Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Probabilitas Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-kondisional">Probabilitas Kondisional</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hipertensi-h">Hipertensi (H)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-hipertensi-t">Tidak Hipertensi (T)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-probabilitas">Menghitung Probabilitas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hipertensi (H)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="probabilitas">
+<h1>Probabilitas<a class="headerlink" href="#probabilitas" title="Link to this heading">#</a></h1>
+<section id="probabilitas-diskrit-probabilitas-bayesian">
+<h2>Probabilitas Diskrit Probabilitas Bayesian<a class="headerlink" href="#probabilitas-diskrit-probabilitas-bayesian" title="Link to this heading">#</a></h2>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="teorema-bayes">
+<h1>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h1>
+<p>Teorema Bayes memberi tahu kita cara menghitung probabilitas kondisional dari suatu peristiwa berdasarkan pengetahuan sebelumnya tentang peristiwa tersebut. Dengan kata lain, ini memungkinkan kita menghitung probabilitas posterior berdasarkan probabilitas sebelumnya:</p>
+<p><span class="math notranslate nohighlight">\(P(E | C) = \frac{P(C | E) \cdot P(E)}{P(C)}\)</span></p>
+<p>Dalam persamaan ini, kita memiliki empat istilah:</p>
+<ul class="simple">
+<li><p><strong>Probabilitas posterior ( P(E | C) )</strong>: probabilitas peristiwa E terjadi, dengan syarat bahwa kondisi C benar;</p></li>
+<li><p><strong>Probabilitas sebelumnya ( P(E) )</strong>: probabilitas tunggal peristiwa E terjadi, yang merupakan pengetahuan sebelumnya tentang peristiwa itu sendiri;</p></li>
+<li><p><strong>Likelihooh ( P(C | E) )</strong>: probabilitas kondisi C benar, dengan syarat bahwa peristiwa E terjadi;</p></li>
+<li><p><strong>Probabilitas marginal ( P(C) )</strong>: probabilitas tunggal kondisi C benar.</p></li>
+</ul>
+<p>Jika kita mengganti beberapa hal, kita dapat menggunakan Teorema Bayes dalam masalah kita. Karena peristiwa kita didasarkan pada variabel target Beach (B), mari kita ganti Peristiwa E dengan Beach B. Selain itu, kondisi kita (ada dua) diberikan oleh dua fitur yang bernama Temperature ((X_1)) dan Wind ((X_2)), jadi mari kita ganti Kondisi C dengan fitur (X_1, X_2). Ingatlah bahwa karena kita memiliki dua fitur dalam masalah ini, kita akan menggunakan semacam probabilitas gabungan. Semua modifikasi ini menghasilkan persamaan berikut:</p>
+<p><span class="math notranslate nohighlight">\(P(B | X_1, X_2) = \frac{P(X_1, X_2 | B) \cdot P(B)}{P(X_1, X_2)}\)</span></p>
+<p>Jika perlu, Anda dapat menambahkan langkah ekstra di sini dan secara mental menyebutkan (X = X_1, X_2), sehingga persamaan menjadi lebih mudah dipahami:</p>
+<p><span class="math notranslate nohighlight">\(P(B | X) = \frac{P(X | B) \cdot P(B)}{P(X)}\)</span></p>
+<p>dan Anda selalu dapat mengganti (X) dengan (X_1, X_2).</p>
+<section id="variabel-independen">
+<h2>Variabel Independen<a class="headerlink" href="#variabel-independen" title="Link to this heading">#</a></h2>
+<p>Langkah terbesar yang akan kita ambil sekarang adalah mengasumsikan bahwa fitur (X_1) dan (X_2) independen — sehingga nama “Naive” menjadi bagian dari model pengklasifikasi kita (Naive Bayes). Mungkin naif untuk mengasumsikan bahwa variabel-variabel ini memang independen, tetapi itu akan sangat menyederhanakan model (dan perhitungan) kita.</p>
+<p>Jika kita menggunakan aturan produk untuk probabilitas gabungan, kita dapat menulis ulang probabilitas marginal sebagai:</p>
+<p><span class="math notranslate nohighlight">\(P(X) = P(X_1) \cdot P(X_2)\)</span></p>
+<p>Demikian juga, kita dapat menulis ulang likelihood sebagai:</p>
+<p><span class="math notranslate nohighlight">\(P(X_1, X_2 | B) = P(X_1 | B) \cdot P(X_2 | B)\)</span></p>
+<p>Kemudian, persamaan utama kita menjadi:</p>
+<p><span class="math notranslate nohighlight">\(P(B | X_1, X_2) = \frac{P(X_1 | B) \cdot P(X_2 | B) \cdot P(B)}{P(X_1) \cdot P(X_2)}\)</span></p>
+<p>Sebelum kita menyelami persamaan ini dan mulai memasukkan semua angka, mari kita lihat plot di bawah ini yang merangkum distribusi semua lima sampel yang kita miliki dari tabel di atas.</p>
+</section>
+<section id="perhitungan-probabilitas">
+<h2>Perhitungan Probabilitas<a class="headerlink" href="#perhitungan-probabilitas" title="Link to this heading">#</a></h2>
+<p>Sekarang kita kembali ke masalah kita: mengingat sampel baru dari fitur ((X_1, X_2)), kita ingin memprediksi target (B). Jika kita tetap pada contoh di mana Temperature = medium ((X_1 = M)) dan Wind = weak ((X_2 = W)), kita harus menghitung:</p>
+<p><span class="math notranslate nohighlight">\(P(B = T | X_1 = M, X_2 = W)\)</span></p>
+<p>dan</p>
+<p><span class="math notranslate nohighlight">\(P(B = F | X_1 = M, X_2 = W)\)</span></p>
+<p>untuk mengetahui mana yang lebih besar. Baiklah, mari kita hitung satu per satu.</p>
+<section id="probabilitas-sebelumnya">
+<h3>1) Probabilitas Sebelumnya<a class="headerlink" href="#probabilitas-sebelumnya" title="Link to this heading">#</a></h3>
+<p>Setiap probabilitas sebelumnya harus dihitung secara individual, tetapi perhitungannya mudah: dari semua (5) sampel, berapa banyak yang benar dan berapa banyak yang salah? Jawabannya adalah 3 dan 5, masing-masing. Jadi,</p>
+<p><span class="math notranslate nohighlight">\(P(B = T) = \frac{3}{5} = 0.6\)</span></p>
+<p>dan</p>
+<p><span class="math notranslate nohighlight">\(P(B = F) = \frac{2}{5} = 0.4\)</span></p>
+<p>Sekali lagi, ini disebut probabilitas sebelumnya karena ini adalah pengetahuan sebelum peristiwa itu sendiri, sehingga mereka dapat dihitung hanya berdasarkan sampel yang kita miliki.</p>
+</section>
+<section id="likelihoods">
+<h3>2) Likelihoods<a class="headerlink" href="#likelihoods" title="Link to this heading">#</a></h3>
+<p>Sama seperti probabilitas sebelumnya, setiap persamaan probabilitas posterior akan mengarah pada likelihood-nya sendiri.</p>
+<p>Untuk (B = T), kita memiliki:</p>
+<p><span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W | B = T) = P(X_1 = M | B = T) \cdot P(X_2 = W | B = T)\)</span></p>
+<p>di mana</p>
+<p><span class="math notranslate nohighlight">\(P(X_1 = M | B = T) = \frac{1}{3} \approx 0.33\)</span></p>
+<p>dan</p>
+<p><span class="math notranslate nohighlight">\(P(X_2 = W | B = T) = \frac{1}{3} \approx 0.33\)</span></p>
+<p>Ini mewakili berapa banyak fitur suhu yang sedang dari semua target beach true</p>
+<p>Ini menunjukkan berapa banyak fitur suhu yang sedang dari semua target pantai yang benar, dan berapa banyak fitur angin yang lemah dari semua target pantai yang benar, masing-masing.</p>
+<p>Sehingga, <span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W | B = T) = \frac{1}{3} \cdot \frac{1}{3} = \frac{1}{9} \approx 0.11\)</span>.</p>
+<p>Dengan cara yang sama, untuk <span class="math notranslate nohighlight">\(B = F\)</span>, kita memiliki:</p>
+<p><span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W | B = F) = P(X_1 = M | B = F) \cdot P(X_2 = W | B = F)\)</span>, dimana <span class="math notranslate nohighlight">\(P(X_1 = M | B = F) = \frac{1}{2} = 0.5\)</span> dan <span class="math notranslate nohighlight">\(P(X_2 = W | B = F) = \frac{1}{2} = 0.5\)</span>.</p>
+<p>Sehingga, <span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W | B = F) = \frac{1}{2} \cdot \frac{1}{2} = \frac{1}{4} = 0.25\)</span>.</p>
+</section>
+<section id="probabilitas-marginal">
+<h3>3) Probabilitas Marginal<a class="headerlink" href="#probabilitas-marginal" title="Link to this heading">#</a></h3>
+<p>Probabilitas marginal adalah sama dalam kedua persamaan yang ingin kita hitung (untuk <span class="math notranslate nohighlight">\(B = T\)</span> dan <span class="math notranslate nohighlight">\(B = F\)</span>):</p>
+<p><span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W) = P(X_1 = M) \cdot P(X_2 = W)\)</span>, dimana <span class="math notranslate nohighlight">\(P(X_1 = M) = \frac{2}{5} = 0.4\)</span> (dua suhu sedang dari semua lima sampel) dan <span class="math notranslate nohighlight">\(P(X_2 = W) = \frac{2}{5} = 0.4\)</span> (dua angin lemah dari semua lima sampel).</p>
+<p>Jadi, <span class="math notranslate nohighlight">\(P(X_1 = M, X_2 = W) = \frac{2}{5} \cdot \frac{2}{5} = \frac{4}{25} = 0.16\)</span>.</p>
+</section>
+<section id="probabilitas-posterior">
+<h3>4) Probabilitas Posterior<a class="headerlink" href="#probabilitas-posterior" title="Link to this heading">#</a></h3>
+<p>Sekarang kita akhirnya bisa memasukkan semua nilai ke dalam dua persamaan utama kita untuk menghitung setiap probabilitas posterior:</p>
+<p><span class="math notranslate nohighlight">\(P(B = T | X_1 = M, X_2 = W)\)</span> dan <span class="math notranslate nohighlight">\(P(B = F | X_1 = M, X_2 = W)\)</span>.</p>
+<p>Karena <span class="math notranslate nohighlight">\(0.63 &gt; 0.42\)</span>, kita bisa memprediksi bahwa <span class="math notranslate nohighlight">\(B = F\)</span>, atau mengatakan bahwa kita tidak harus pergi ke pantai, mengingat kondisi tersebut.</p>
+<p>Probabilitas Prediksi
+Langkah lain yang diambil oleh model Naive Bayes adalah menghitung probabilitas relatif untuk kedua keputusan benar dan salah. Ini dilakukan karena probabilitas posterior tidak menambahkan hingga satu (<span class="math notranslate nohighlight">\(0.63 &gt; 0.42 = 1.05 \neq 1\)</span> atau, jika Anda ingin lebih tepat, <span class="math notranslate nohighlight">\(\frac{5}{12} + \frac{5}{8} = \frac{25}{24} \neq 1\)</span>).</p>
+<p>Kita dapat mendefinisikan <span class="math notranslate nohighlight">\(P_T\)</span> sebagai probabilitas memprediksi benar dan <span class="math notranslate nohighlight">\(P_F\)</span> sebagai probabilitas memprediksi salah sebagai berikut:</p>
+<p><span class="math notranslate nohighlight">\(P_T = \frac{P(B = T | X)}{P(B = T | X) + P(B = F | X)}\)</span> dan <span class="math notranslate nohighlight">\(P_F = \frac{P(B = F | X)}{P(B = T | X) + P(B = F | X)}\)</span>.</p>
+<p>Catatan bahwa kita mengabaikan nilai aktual untuk <span class="math notranslate nohighlight">\(X_1\)</span> dan <span class="math notranslate nohighlight">\(X_2\)</span> demi kesederhanaan. Juga, sekarang kita dapat memastikan bahwa <span class="math notranslate nohighlight">\(P_T + P_F = 1\)</span>.</p>
+<p>Keuntungan utama menggunakan probabilitas (yang menambahkan hingga satu) adalah jika kita menemukan yang pertama lebih besar dari 0.5, kita dapat membuat keputusan tanpa menghitung yang kedua. Atau, jika kita berurusan dengan lebih dari dua kelas untuk variabel target kita, segera setelah kita menemukan satu probabilitas yang lebih besar dari 0.5, itu sudah menjadi jawaban kita.</p>
+<p>Menghubungkan probabilitas posterior yang telah kita hitung memberi kita:</p>
+<p><span class="math notranslate nohighlight">\(P_T = \frac{0.63}{1.05} \approx 0.6\)</span> dan <span class="math notranslate nohighlight">\(P_F = \frac{0.42}{1.05} \approx 0.4\)</span>, dan, sekali lagi, kita akan memilih <span class="math notranslate nohighlight">\(B = F\)</span>. Tetapi segera setelah kita menghitung probabilitas prediksi pertama, <span class="math notranslate nohighlight">\(P_T = 0.4\)</span>, karena <span class="math notranslate nohighlight">\(P_T &lt; 0.5\)</span>, kita akan otomatis memprediksi kelas yang lain (selain T); yaitu, F — yang, sekali lagi, berarti kita tidak harus pergi ke pantai.</p>
+</section>
+<section id="skor-prediksi">
+<h3>Skor Prediksi<a class="headerlink" href="#skor-prediksi" title="Link to this heading">#</a></h3>
+<p>Kita telah menyadari bahwa kemungkinan marginal adalah sama dalam kedua kasus, sehingga bisa diabaikan jika kita hanya untuk membandingkan probabilitas posterior.</p>
+<p>Kita dapat mendefinisikan satu konsep lagi di sini, yaitu skor yang dapat digunakan untuk membuat prediksi. Dan skor ini adalah pembilang dari persamaan probabilitas posterior kita; yaitu, produk antara kemungkinan dan probabilitas awal (tidak perlu membaginya dengan probabilitas marginal). Ini menghasilkan:</p>
+<p><span class="math notranslate nohighlight">\(S_T = P(X | B = T) \cdot P(B = T)\)</span> dan <span class="math notranslate nohighlight">\(S_F = P(X | B = F) \cdot P(B = F)\)</span>.</p>
+<p>Sebaliknya, keputusan kita dapat didasarkan pada perbandingan sederhana antara (<span class="math notranslate nohighlight">\(S_T\)</span> dan <span class="math notranslate nohighlight">\(S_F\)</span> tidak menambahkan hingga 1 juga).</p>
+<p>Dalam contoh kita:</p>
+<p><span class="math notranslate nohighlight">\(S_T = \frac{1}{15} \approx 0.067\)</span> dan <span class="math notranslate nohighlight">\(S_F = \frac{1}{10} = 0.1\)</span>.</p>
+<p>Karena <span class="math notranslate nohighlight">\(0.1 &gt; 0.067\)</span> (SF &gt; ST), kita akan memutuskan untuk <span class="math notranslate nohighlight">\(B = F\)</span>, seperti yang diprediksi sebelumnya: kita tidak harus pergi ke pantai.</p>
+<p>Pada akhirnya, ketika menghitung probabilitas prediksi, probabilitas marginal juga dibatalkan secara alami. Kita bahkan dapat menulis ulang mereka sebagai fungsi dari skor prediksi:</p>
+<p><span class="math notranslate nohighlight">\(P_T = \frac{S_T}{S_T + S_F}\)</span> dan <span class="math notranslate nohighlight">\(P_F = \frac{S_F}{S_T + S_F}\)</span>, dimana</p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">
+<h1>Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi<a class="headerlink" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi" title="Link to this heading">#</a></h1>
+<p>Bagaimana kemungkinan/probabilitas usia paruh baya dengan tekanan darah sangat tinggi mengalami penyakit Hipertensi (H) atau Tidak (T)?</p>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>No</p></th>
+<th class="head"><p>Usia</p></th>
+<th class="head"><p>Tekanan Darah</p></th>
+<th class="head"><p>Penyakit (H/T)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>Muda</p></td>
+<td><p>Tinggi</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>Paruh baya</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>Tua</p></td>
+<td><p>Normal</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>Tua</p></td>
+<td><p>Sangat Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>Muda</p></td>
+<td><p>Normal</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>Tua</p></td>
+<td><p>Tinggi</p></td>
+<td><p>H</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="perhitungan">
+<h2>Perhitungan<a class="headerlink" href="#perhitungan" title="Link to this heading">#</a></h2>
+<section id="probabilitas-dasar">
+<h3>Probabilitas Dasar<a class="headerlink" href="#probabilitas-dasar" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Total data: 8</p></li>
+<li><p>Hipertensi (H): 4</p></li>
+<li><p>Tidak Hipertensi (T): 4</p></li>
+</ul>
+</section>
+<section id="id1">
+<h3>Probabilitas Dasar<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(( P(H) = \frac{4}{8} = 0.5 )\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(( P(T) = \frac{4}{8} = 0.5 )\)</span></p></li>
+</ul>
+</section>
+<section id="probabilitas-kondisional">
+<h3>Probabilitas Kondisional<a class="headerlink" href="#probabilitas-kondisional" title="Link to this heading">#</a></h3>
+<section id="hipertensi-h">
+<h4>Hipertensi (H)<a class="headerlink" href="#hipertensi-h" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(( P(U=Paruh Baya | H) = \frac{1}{4} )\)</span> (dari 4 orang dengan Hipertensi, 1 adalah paruh baya)</p></li>
+<li><p><span class="math notranslate nohighlight">\(( P(T=Sangat Tinggi | H) = \frac{1}{4} )\)</span> (dari 4 orang dengan Hipertensi, 1 memiliki tekanan darah sangat tinggi)</p></li>
+</ul>
+</section>
+<section id="tidak-hipertensi-t">
+<h4>Tidak Hipertensi (T)<a class="headerlink" href="#tidak-hipertensi-t" title="Link to this heading">#</a></h4>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(( P(U=Paruh Baya | T) = \frac{1}{4} )\)</span> (dari 4 orang tanpa Hipertensi, 1 adalah paruh baya)</p></li>
+<li><p><span class="math notranslate nohighlight">\(( P(T=Sangat Tinggi | T) = \frac{0}{4} = 0 )\)</span> (dari 4 orang tanpa Hipertensi, tidak ada yang memiliki tekanan darah sangat tinggi)</p></li>
+</ul>
+</section>
+</section>
+<section id="menghitung-probabilitas">
+<h3>Menghitung Probabilitas<a class="headerlink" href="#menghitung-probabilitas" title="Link to this heading">#</a></h3>
+<section id="id2">
+<h4>Hipertensi (H)<a class="headerlink" href="#id2" title="Link to this heading">#</a></h4>
+<p><span class="math notranslate nohighlight">\([ 
+P(H | U=Paruh Baya, T=Sangat Tinggi) = \frac{P(U=Paruh Baya | H) \cdot P(T=Sangat Tinggi | H) \cdot P(H)}{P(U=Paruh Baya, T=Sangat Tinggi)} 
+]\)</span></p>
+</section>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="deretan.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Deretan</p>
+      </div>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Probabilitas</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit-probabilitas-bayesian">Probabilitas Diskrit Probabilitas Bayesian</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-independen">Variabel Independen</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-probabilitas">Perhitungan Probabilitas</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-sebelumnya">1) Probabilitas Sebelumnya</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#likelihoods">2) Likelihoods</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-marginal">3) Probabilitas Marginal</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-posterior">4) Probabilitas Posterior</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skor-prediksi">Skor Prediksi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan">Perhitungan</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-dasar">Probabilitas Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Probabilitas Dasar</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-kondisional">Probabilitas Kondisional</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#hipertensi-h">Hipertensi (H)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#tidak-hipertensi-t">Tidak Hipertensi (T)</a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#menghitung-probabilitas">Menghitung Probabilitas</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Hipertensi (H)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
