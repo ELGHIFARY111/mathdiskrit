@@ -5,7 +5,7 @@ title: Probabilitas
 
 # Probabilitas
 ## Probabilitas Diskrit Probabilitas Bayesian
-# Teorema Bayes
+## Teorema Bayes
 
 Teorema Bayes memberi tahu kita cara menghitung probabilitas kondisional dari suatu peristiwa berdasarkan pengetahuan sebelumnya tentang peristiwa tersebut. Dengan kata lain, ini memungkinkan kita menghitung probabilitas posterior berdasarkan probabilitas sebelumnya:
 
@@ -146,7 +146,7 @@ Karena $0.1 > 0.067$ (SF > ST), kita akan memutuskan untuk $B = F$, seperti yang
 Pada akhirnya, ketika menghitung probabilitas prediksi, probabilitas marginal juga dibatalkan secara alami. Kita bahkan dapat menulis ulang mereka sebagai fungsi dari skor prediksi:
 
 $P_T = \frac{S_T}{S_T + S_F}$ dan $P_F = \frac{S_F}{S_T + S_F}$, dimana
-# Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi
+## Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi
 
 Bagaimana kemungkinan/probabilitas usia paruh baya dengan tekanan darah sangat tinggi mengalami penyakit Hipertensi (H) atau Tidak (T)?
 

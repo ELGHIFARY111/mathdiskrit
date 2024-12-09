@@ -3,7 +3,7 @@ title: LOGIKA
 
 ---
 
-# Logika Matematika
+# Logika
 
 ## NEGASI
 APA ITU NEGASI ?

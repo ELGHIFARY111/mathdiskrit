@@ -179,14 +179,12 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="himpunan.html">himpunan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="logika.html">Logika Matematika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logika.html">Logika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="boolean.html">boolean</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hubungan.html">hubungan</a></li>
 <li class="toctree-l1"><a class="reference internal" href="deretan.html">Deretan</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Probabilitas</a></li>
-
-
 <li class="toctree-l1"><a class="reference internal" href="UAS.html">UAS</a></li>
 </ul>
 
@@ -383,11 +381,8 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Probabilitas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit-probabilitas-bayesian">Probabilitas Diskrit Probabilitas Bayesian</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-independen">Variabel Independen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-probabilitas">Perhitungan Probabilitas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-sebelumnya">1) Probabilitas Sebelumnya</a></li>
@@ -397,9 +392,7 @@ document.write(`
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skor-prediksi">Skor Prediksi</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan">Perhitungan</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-dasar">Probabilitas Dasar</a></li>
@@ -416,9 +409,6 @@ document.write(`
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -434,9 +424,8 @@ document.write(`
 <section id="probabilitas-diskrit-probabilitas-bayesian">
 <h2>Probabilitas Diskrit Probabilitas Bayesian<a class="headerlink" href="#probabilitas-diskrit-probabilitas-bayesian" title="Link to this heading">#</a></h2>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="teorema-bayes">
-<h1>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h1>
+<section id="teorema-bayes">
+<h2>Teorema Bayes<a class="headerlink" href="#teorema-bayes" title="Link to this heading">#</a></h2>
 <p>Teorema Bayes memberi tahu kita cara menghitung probabilitas kondisional dari suatu peristiwa berdasarkan pengetahuan sebelumnya tentang peristiwa tersebut. Dengan kata lain, ini memungkinkan kita menghitung probabilitas posterior berdasarkan probabilitas sebelumnya:</p>
 <p><span class="math notranslate nohighlight">\(P(E | C) = \frac{P(C | E) \cdot P(E)}{P(C)}\)</span></p>
 <p>Dalam persamaan ini, kita memiliki empat istilah:</p>
@@ -451,6 +440,7 @@ document.write(`
 <p>Jika perlu, Anda dapat menambahkan langkah ekstra di sini dan secara mental menyebutkan (X = X_1, X_2), sehingga persamaan menjadi lebih mudah dipahami:</p>
 <p><span class="math notranslate nohighlight">\(P(B | X) = \frac{P(X | B) \cdot P(B)}{P(X)}\)</span></p>
 <p>dan Anda selalu dapat mengganti (X) dengan (X_1, X_2).</p>
+</section>
 <section id="variabel-independen">
 <h2>Variabel Independen<a class="headerlink" href="#variabel-independen" title="Link to this heading">#</a></h2>
 <p>Langkah terbesar yang akan kita ambil sekarang adalah mengasumsikan bahwa fitur (X_1) dan (X_2) independen — sehingga nama “Naive” menjadi bagian dari model pengklasifikasi kita (Naive Bayes). Mungkin naif untuk mengasumsikan bahwa variabel-variabel ini memang independen, tetapi itu akan sangat menyederhanakan model (dan perhitungan) kita.</p>
@@ -526,10 +516,10 @@ Langkah lain yang diambil oleh model Naive Bayes adalah menghitung probabilitas 
 <p><span class="math notranslate nohighlight">\(P_T = \frac{S_T}{S_T + S_F}\)</span> dan <span class="math notranslate nohighlight">\(P_F = \frac{S_F}{S_T + S_F}\)</span>, dimana</p>
 </section>
 </section>
-</section>
-<section class="tex2jax_ignore mathjax_ignore" id="probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">
-<h1>Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi<a class="headerlink" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi" title="Link to this heading">#</a></h1>
+<section id="probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">
+<h2>Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi<a class="headerlink" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi" title="Link to this heading">#</a></h2>
 <p>Bagaimana kemungkinan/probabilitas usia paruh baya dengan tekanan darah sangat tinggi mengalami penyakit Hipertensi (H) atau Tidak (T)?</p>
+</section>
 <section id="data">
 <h2>Data<a class="headerlink" href="#data" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
@@ -695,11 +685,8 @@ P(H | U=Paruh Baya, T=Sangat Tinggi) = \frac{P(U=Paruh Baya | H) \cdot P(T=Sanga
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Probabilitas</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-diskrit-probabilitas-bayesian">Probabilitas Diskrit Probabilitas Bayesian</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#teorema-bayes">Teorema Bayes</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variabel-independen">Variabel Independen</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan-probabilitas">Perhitungan Probabilitas</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-sebelumnya">1) Probabilitas Sebelumnya</a></li>
@@ -709,9 +696,7 @@ P(H | U=Paruh Baya, T=Sangat Tinggi) = \frac{P(U=Paruh Baya | H) \cdot P(T=Sanga
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#skor-prediksi">Skor Prediksi</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-hipertensi-pada-usia-paruh-baya-dengan-tekanan-darah-sangat-tinggi">Probabilitas Hipertensi pada Usia Paruh Baya dengan Tekanan Darah Sangat Tinggi</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#perhitungan">Perhitungan</a><ul class="nav section-nav flex-column">
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#probabilitas-dasar">Probabilitas Dasar</a></li>
@@ -728,9 +713,6 @@ P(H | U=Paruh Baya, T=Sangat Tinggi) = \frac{P(U=Paruh Baya | H) \cdot P(T=Sanga
 </ul>
 </li>
 </ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
