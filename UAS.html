@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Logika Matematika &#8212; My sample book</title>
+    <title>UAS &#8212; My sample book</title>
   
   
   
@@ -59,11 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'logika';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'UAS';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Algoritma" href="Algoritma.html" />
-    <link rel="prev" title="himpunan" href="himpunan.html" />
+    <link rel="prev" title="Probabilitas" href="Probabilitas.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,7 +179,7 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="himpunan.html">himpunan</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Logika Matematika</a></li>
+<li class="toctree-l1"><a class="reference internal" href="logika.html">Logika Matematika</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="boolean.html">boolean</a></li>
 <li class="toctree-l1"><a class="reference internal" href="hubungan.html">hubungan</a></li>
@@ -188,7 +187,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Probabilitas.html">Probabilitas</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="UAS.html">UAS</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">UAS</a></li>
 </ul>
 
     </div>
@@ -260,7 +259,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Flogika.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FUAS.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -290,7 +289,7 @@
       
       
       
-      <li><a href="_sources/logika.md" target="_blank"
+      <li><a href="_sources/UAS.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -374,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Logika Matematika</h1>
+    <h1>UAS</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -384,13 +383,12 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">NEGASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">KONJUNGSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">DISJUNGSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">IMPLIKASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">BIIMPLIKASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">REFERENSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">soal 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-closeness-centrality-g">1. Hitung closeness centrality G</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-betwennesse-centrality-f">2. Hitung betwennesse centrality F</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -402,249 +400,154 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="logika-matematika">
-<h1>Logika Matematika<a class="headerlink" href="#logika-matematika" title="Link to this heading">#</a></h1>
-<section id="negasi">
-<h2>NEGASI<a class="headerlink" href="#negasi" title="Link to this heading">#</a></h2>
-<p>APA ITU NEGASI ?
-Negasi atau ingkaran adalah penolakan dari pernyataan yang ada. Jika sebuah
-pernyataan bernilai salah maka negasinya bernilai benar dan jika pernyataan
-bernilai benar maka negasinya bernilai salah. Penulisan lambang negasi P
-adalah “ <span class="math notranslate nohighlight">\(\sim P\)</span> “. Untuk menentukan ingkaran atau negasi dari sebuah pernyataan
-maka penulisan ditambah kata “ tidak , tidak benar bahwa, atau bukan“ di depan
-pernyataan.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="uas">
+<h1>UAS<a class="headerlink" href="#uas" title="Link to this heading">#</a></h1>
+<section id="soal-1">
+<h2>soal 1<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h2>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(\sim P\)</span></p></th>
+<tr class="row-odd"><th class="head"><p>P</p></th>
+<th class="head"><p>Q</p></th>
+<th class="head"><p>R</p></th>
+<th class="head"><p>S</p></th>
+<th class="head"><p>P&gt;Q</p></th>
+<th class="head"><p>R&gt;S</p></th>
+<th class="head"><p>(P&gt;Q)&gt;(R&gt;S)</p></th>
 </tr>
 </thead>
 <tbody>
 <tr class="row-even"><td><p>T</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
 <td><p>T</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Contoh :</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : 10 adalah bilangan genap. ( B )
-<span class="math notranslate nohighlight">\(\sim P\)</span> : 10 adalah bukan bilangan bulat. ( S )</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : jeki orang surabaya. ( B )
-<span class="math notranslate nohighlight">\(\sim P\)</span> : jeki bukan orang surabaya. ( S )</p></li>
-</ul>
-</section>
-<section id="konjungsi">
-<h2>KONJUNGSI<a class="headerlink" href="#konjungsi" title="Link to this heading">#</a></h2>
-<p>APAITU KONJUNGSI ?
-Jika dua pernyataan digabungkan dengan kata “dan” maka pernyataan itu
-disebut konjungsi. Penulisan kata gabung “dan “ pada konjungsi dilambangkan
-dengan tanda : “ <span class="math notranslate nohighlight">\(\wedge\)</span> “.</p>
-<p>Sedangkan tabel kebenaran pernyataan-pernyataan
-konjungsi disampaikan dalam bentuk tabel sebagai berikut :</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\wedge\)</span><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
 <td><p>T</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
 <td><p>F</p></td>
 <td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
 </tr>
-<tr class="row-even"><td><p>F</p></td>
+<tr class="row-even"><td><p>T</p></td>
 <td><p>T</p></td>
 <td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>Pernyataan majemuk <span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\wedge\)</span><span class="math notranslate nohighlight">\(Q\)</span> dikatakan benar jika kedua-duanya benar dalam
-hal lain dikatakan salah.
-Contoh :</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : Sapi adalah  hewan darat. ( T )
-<span class="math notranslate nohighlight">\(Q\)</span> : Sapi binatang herbivora. ( T )
-<span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\wedge\)</span><span class="math notranslate nohighlight">\(Q\)</span> : Sapi adalah hewan darat dan binatang herbivora. ( T )</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : 7 adalah bilangan ganjil. ( T )
-<span class="math notranslate nohighlight">\(Q\)</span> : 7 adalah bilangan prima. ( F )
-<span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\wedge\)</span><span class="math notranslate nohighlight">\(Q\)</span> : 7 adalah bilangan ganjil dan prima. ( F )</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : 21 adalah bilangan genap. ( F )
-<span class="math notranslate nohighlight">\(Q\)</span> : 21 adalah bilangan khayal. ( F )
-<span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\wedge\)</span><span class="math notranslate nohighlight">\(Q\)</span> : 21 adalah bilangan genap dan khayal. ( F )</p></li>
-</ul>
-</section>
-<section id="disjungsi">
-<h2>DISJUNGSI<a class="headerlink" href="#disjungsi" title="Link to this heading">#</a></h2>
-<p>APA ITU DISJUNGSI ?
-Jika dua pernyataan digabungkan dengan kata “ atau “ maka pernyataan</p>
-<p>pernyataan bernilai benar jika salah satu pernyataan benar, pernyataan bernilai salah saat kedua pernyataan bernilai salah.</p>
-<p>Lambang disjungsi inklusif adalah “ <span class="math notranslate nohighlight">\(\vee\)</span> “ dan tabel kebenarannya sebagai
-berikut.</p>
-<div class="pst-scrollable-table-container"><table class="table">
-<thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\vee\)</span><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-</tr>
-</thead>
-<tbody>
-<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
 <td><p>T</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
 <td><p>F</p></td>
 <td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
 </tr>
-<tr class="row-even"><td><p>F</p></td>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>F</p></td>
 <td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>F</p></td>
 <td><p>T</p></td>
 </tr>
 <tr class="row-odd"><td><p>F</p></td>
 <td><p>F</p></td>
 <td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-even"><td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+</tr>
+<tr class="row-odd"><td><p>F</p></td>
+<td><p>F</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
+<td><p>T</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Contoh :</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : jek membeli baju
-<span class="math notranslate nohighlight">\(Q\)</span> : jek membeli celana
-<span class="math notranslate nohighlight">\(P\)</span><span class="math notranslate nohighlight">\(\vee\)</span><span class="math notranslate nohighlight">\(Q\)</span> : jek membei baju atau celana</p></li>
-</ul>
-<p>Keterangan :
-Pernyataan di atas mempunyai makna sebagai berikut :</p>
-<ol class="arabic simple">
-<li><p>jek membeli baju tetapi Tono tidak membeli celana</p></li>
-<li><p>jek membeli celana tetapi Tono tidak membeli baju</p></li>
-<li><p>jek membeli baju sekaligus juga membeli celana</p></li>
-</ol>
 </section>
-<section id="implikasi">
-<h2>IMPLIKASI<a class="headerlink" href="#implikasi" title="Link to this heading">#</a></h2>
-<p>APA ITU IMPLIKASI ?
-Pernyataan majemuk yang berbentuk “ jika P maka Q “ disebut implikasi atau
-kondisional. Lambang penulisan implikasi sebagai berikut :
-“ <span class="math notranslate nohighlight">\(P \to Q\)</span> “ atau “ <span class="math notranslate nohighlight">\(P \Rightarrow Q\)</span>“
-Pernyataan majemuk “ <span class="math notranslate nohighlight">\(P \to Q\)</span> “ akan dikatakan bernilai salah jika P benar
-dan Q salah, dalam hal lain dikatakan benar.
-Tabel kebenaran dari implikasi sebagai berikut :</p>
+<section id="soal-2">
+<h2>soal 2<a class="headerlink" href="#soal-2" title="Link to this heading">#</a></h2>
+<p><img alt="image" src="https://hackmd.io/_uploads/HJeepM44kl.png" /></p>
+<section id="hitung-closeness-centrality-g">
+<h3>1. Hitung closeness centrality G<a class="headerlink" href="#hitung-closeness-centrality-g" title="Link to this heading">#</a></h3>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(P \to Q\)</span></p></th>
+<tr class="row-odd"><th class="head"><p>NODE</p></th>
+<th class="head"><p>A</p></th>
+<th class="head"><p>B</p></th>
+<th class="head"><p>C</p></th>
+<th class="head"><p>D</p></th>
+<th class="head"><p>E</p></th>
+<th class="head"><p>F</p></th>
+<th class="head"><p>G</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-even"><td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
+<tr class="row-even"><td><p>G</p></td>
+<td><p>3</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
+<td><p>3</p></td>
+<td><p>2</p></td>
+<td><p>0</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Contoh :</p>
-<ul class="simple">
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : Achmad siswa yang rajin. ( T )
-<span class="math notranslate nohighlight">\(Q\)</span> : Achmad naik kelas. ( T )
-<span class="math notranslate nohighlight">\(P \to Q\)</span>:Jika Achmad siswa yang rajin maka Achmad
-naik kelas. ( T )</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : 7 x 2 = 72 ( F )
-<span class="math notranslate nohighlight">\(Q\)</span> : 6 + 4 = 10 ( T )
-<span class="math notranslate nohighlight">\(P \to Q\)</span>:Jika 7 x 2 = 72 maka 6 + 4 = 10 ( T ).</p></li>
-<li><p><span class="math notranslate nohighlight">\(P\)</span> : - 6 adalah bilangan bulat. ( T )
-<span class="math notranslate nohighlight">\(Q\)</span> : - 6 adalah bilangan irrasional ( F )
-<span class="math notranslate nohighlight">\(P \to Q\)</span>:Jika - 6 adalah bilangan bulat maka – 6 adalah
-Bilangan irrasional. ( F )</p></li>
-</ul>
+<p><span class="math notranslate nohighlight">\(Cc(G)=\frac{7-1}{(3+1+2+3+3+2)}=\frac{6}{14}\)</span></p>
 </section>
-<section id="biimplikasi">
-<h2>BIIMPLIKASI<a class="headerlink" href="#biimplikasi" title="Link to this heading">#</a></h2>
-<p>APA ITU BIIMPLIKASI
-Pernyataan majemuk yang berbentuk “ P jika dan hanya jika Q “
-disebut Bi-implikasi. Penulisan Bi-implikasi menggunakan lambang “ <span class="math notranslate nohighlight">\(P \leftrightarrow Q\)</span> “
-atau<span class="math notranslate nohighlight">\(P \Leftrightarrow Q\)</span> “. Lambang di atas bermakna :</p>
-<ol class="arabic simple">
-<li><p>P jika dan hanya jika Q.</p></li>
-<li><p>P ekuivalen Q.</p></li>
-<li><p>P syarat yang perlu dan cukup untuk Q.
-Jika P dan Q dua pernyataan yang tersusun sebagai “<span class="math notranslate nohighlight">\(P \leftrightarrow Q\)</span> “ maka tabel
-kebenarannya sebagai berikut :</p></li>
-</ol>
+<section id="hitung-betwennesse-centrality-f">
+<h3>2. Hitung betwennesse centrality F<a class="headerlink" href="#hitung-betwennesse-centrality-f" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(C_B(v_i) = \sum_{v_s \neq v_i \neq v_t \in V, s &lt; t} \frac{\sigma s_{t}(v_i)}{\sigma s_t)}\)</span></p>
 <div class="pst-scrollable-table-container"><table class="table">
 <thead>
-<tr class="row-odd"><th class="head"><p><span class="math notranslate nohighlight">\(P\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(Q\)</span></p></th>
-<th class="head"><p><span class="math notranslate nohighlight">\(P \leftrightarrow Q\)</span></p></th>
+<tr class="row-odd"><th class="head"><p>NODE</p></th>
+<th class="head"><p>s=B</p></th>
+<th class="head"><p>s=C</p></th>
+<th class="head"><p>s=G</p></th>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p>T</p></td>
-<td><p>T</p></td>
-<td><p>T</p></td>
+<tr class="row-even"><td><p>t=A</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
 </tr>
-<tr class="row-odd"><td><p>T</p></td>
-<td><p>F</p></td>
-<td><p>F</p></td>
+<tr class="row-odd"><td><p>t=D</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
 </tr>
-<tr class="row-even"><td><p>F</p></td>
-<td><p>T</p></td>
-<td><p>F</p></td>
-</tr>
-<tr class="row-odd"><td><p>F</p></td>
-<td><p>F</p></td>
-<td><p>T</p></td>
+<tr class="row-even"><td><p>t=E</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
+<td><p>1/1</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-<p>Contoh :</p>
-<ul class="simple">
-<li><p>P : Gajah binatang berkaki empat. ( T )
-Q : Gajah bertelinga lebar. ( T )
-P Q : Gajah binatang berkaki empat jika dan hanya jikagajah binatang bertelinga lebar ( T )</p></li>
-<li><p>P : 8 + 2 = 10 ( T )
-Q : - 16 – 4 = - 12 ( F )
-P Q : 8 + 2 = 10 jika dan hanya jika – 16 – 4 = - 12 ( F )</p></li>
-</ul>
+<p><span class="math notranslate nohighlight">\(Cb(G)=6\)</span></p>
 </section>
-<section id="referensi">
-<h2>REFERENSI<a class="headerlink" href="#referensi" title="Link to this heading">#</a></h2>
-<p>(Jakarta, Februari 2021). Modul belajar mandiri matematika. 9/23/2024, <a class="reference external" href="https://cdn-gbelajar.simpkb.id/s3/p3k/Matematika/Per%20Pembelajaran/Matematika%20-%20PB3.pdf">https://cdn-gbelajar.simpkb.id/s3/p3k/Matematika/Per Pembelajaran/Matematika - PB3.pdf</a>.</p>
-</section>
-<section id="tugas">
-<h2>tugas<a class="headerlink" href="#tugas" title="Link to this heading">#</a></h2>
-<p>Buatlah tabel kebenaran untuk~pernyataan berikut $<span class="math notranslate nohighlight">\(P\lor(R\to\ Q)\)</span>$</p>
-<div class="math notranslate nohighlight">
-\[\begin{split}\begin{array}{c|c|c|c|cc}P&amp;Q&amp;R&amp;\ Q&amp;R\to\ Q&amp;P\lor(R\to\ Q)\\\hline\text{Т}&amp;\text{Т}&amp;\text{Т}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{Т}&amp;\text{Т}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{T}\\\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\text{T}\\\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{F}&amp;\text{F}&amp;\text{F}\\\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{F}&amp;\text{T}&amp;\text{T}&amp;\end{array}\end{split}\]</div>
 </section>
 </section>
 
@@ -679,22 +582,13 @@ P Q : 8 + 2 = 10 jika dan hanya jika – 16 – 4 = - 12 ( F )</p></li>
                   
 <div class="prev-next-area">
     <a class="left-prev"
-       href="himpunan.html"
+       href="Probabilitas.html"
        title="previous page">
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">himpunan</p>
+        <p class="prev-next-title">Probabilitas</p>
       </div>
-    </a>
-    <a class="right-next"
-       href="Algoritma.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Algoritma</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -712,13 +606,12 @@ P Q : 8 + 2 = 10 jika dan hanya jika – 16 – 4 = - 12 ( F )</p></li>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#negasi">NEGASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#konjungsi">KONJUNGSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#disjungsi">DISJUNGSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implikasi">IMPLIKASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#biimplikasi">BIIMPLIKASI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#referensi">REFERENSI</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas">tugas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">soal 2</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-closeness-centrality-g">1. Hitung closeness centrality G</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hitung-betwennesse-centrality-f">2. Hitung betwennesse centrality F</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 
