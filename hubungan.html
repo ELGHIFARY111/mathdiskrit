@@ -402,87 +402,82 @@ document.write(`
                 <article class="bd-article">
                   
   <section class="tex2jax_ignore mathjax_ignore" id="hubungan">
-<h1>hubungan<a class="headerlink" href="#hubungan" title="Link to this heading">#</a></h1>
-<p><img alt="image" src="https://hackmd.io/_uploads/SJLbqI_z1x.png" /></p>
+    <h1>hubungan<a class="headerlink" href="#hubungan" title="Link to this heading">#</a></h1>
+
 <section id="social-network-analysis">
 <h2>Social Network Analysis<a class="headerlink" href="#social-network-analysis" title="Link to this heading">#</a></h2>
 <p>Social Network Analysis (SNA) adalah bidang kajian yang mengeksplorasi hubungan antar manusia menggunakan teori graf. Implementasi SNA membantu menjelaskan relasi atau hubungan antar aktor melalui visualisasi berbentuk graf. Relasi dalam analisis jaringan sosial dihitung menggunakan ukuran <strong>centrality</strong>, sesuai dengan posisi masing-masing aktor di dalam struktur jaringan tersebut.</p>
-<p>Dalam <strong>social network</strong>, terdapat:</p>
-<ul class="simple">
-<li><p><strong>Node</strong>: Mewakili individu atau aktor.</p></li>
-<li><p><strong>Edges</strong>: Relasi atau hubungan antar node.</p></li>
-</ul>
-<p>Jaringan sosial terdiri dari banyak aktor yang saling berhubungan, membentuk peta jaringan sosial yang dinyatakan dengan graf.</p>
 </section>
+
 <section id="centrality">
 <h2>Centrality<a class="headerlink" href="#centrality" title="Link to this heading">#</a></h2>
-<p>Tidak semua node dalam jaringan adalah penting. <strong>Centrality</strong> digunakan untuk menentukan aktor yang paling penting dalam jaringan, yang dibagi menjadi empat jenis:</p>
+<p>Centrality digunakan untuk menentukan aktor yang paling penting dalam jaringan. Beberapa metrik utama adalah:</p>
 <ol class="arabic simple">
 <li><p><strong>Degree Centrality</strong></p></li>
 <li><p><strong>Closeness Centrality</strong></p></li>
 <li><p><strong>Betweenness Centrality</strong></p></li>
-<li><p><strong>Eigenvector Centrality</strong></p></li>
 </ol>
+
 <section id="degree-centrality">
 <h3>1. Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h3>
-<p>Degree centrality adalah jumlah <strong>edges</strong> yang terkoneksi dengan suatu node. Pentingnya node ditentukan oleh jumlah node yang berdekatan dengannya.</p>
+<p>Degree centrality adalah jumlah <strong>edges</strong> yang terkoneksi pada suatu node. Node yang memiliki degree lebih tinggi dianggap lebih penting.</p>
 <div class="math notranslate nohighlight">
-\[
-C_D(v) = \deg(v)
-\]</div>
+\[C_D(v_i) = d_i = \sum A_{ij}\]
+</div>
+
 <section id="normalisasi-degree-centrality">
 <h4>Normalisasi Degree Centrality<a class="headerlink" href="#normalisasi-degree-centrality" title="Link to this heading">#</a></h4>
-<p>Untuk node (v) dengan total (n) node:
-$<span class="math notranslate nohighlight">\(
-C_D^{norm}(v) = \frac{\deg(v)}{n-1}
-\)</span>$</p>
+<p>Normalisasi Degree Centrality untuk node (v) dengan total (n) node:</p>
+<div class="math notranslate nohighlight">
+\[C_D^{norm}(v) = \frac{\deg(v)}{n-1}\]
+</div>
 <p>Contoh:</p>
 <ul class="simple">
-<li><p>Degree centrality untuk node 1 adalah (3).</p></li>
+<li><p>Degree centrality untuk node 1 adalah 3.</p></li>
 <li><p>Normalisasi degree centrality:
-$<span class="math notranslate nohighlight">\(
-C_D^{norm}(1) = \frac{3}{9-1} = \frac{3}{8}.
-\)</span>$</p></li>
+<div class="math notranslate nohighlight">
+\[\frac{3}{9-1} = \frac{3}{8}\]
+</div></p></li>
 </ul>
 </section>
 </section>
-<hr class="docutils" />
+
 <section id="closeness-centrality">
 <h3>2. Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h3>
 <p>Closeness centrality mengukur kedekatan antara satu node dengan node lain dalam jaringan melalui rata-rata jarak terpendek:</p>
 <div class="math notranslate nohighlight">
-\[
-C_C(v) = \frac{1}{\sum_{u \neq v} d(u, v)}
-\]</div>
+\[C_C(v_i) = \frac{n-1}{\sum_{j \neq i} g(v_i, v_j)}\]
+</div>
+<p>Contoh:</p>
 <ul class="simple">
-<li><p>Skor closeness centrality menunjukkan kecepatan penyebaran informasi.</p></li>
-<li><p>Contoh: Node 4 lebih central daripada node 3 karena rata-rata jaraknya lebih kecil.</p></li>
+<li><p>Node 3: \(\frac{8}{17} = 0.47\)</p></li>
+<li><p>Node 4: \(\frac{8}{13} = 0.62\)</p></li>
 </ul>
+<p>Node 4 lebih sentral dibandingkan node 3 karena memiliki nilai yang lebih tinggi.</p>
 </section>
-<hr class="docutils" />
+
 <section id="betweenness-centrality">
 <h3>3. Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h3>
-<p>Betweenness centrality mengukur seberapa besar informasi melewati suatu node. Node dengan skor tinggi memainkan peran penting sebagai penghubung dalam jaringan.</p>
+<p>Betweenness centrality mengukur seberapa besar peran suatu node dalam penyebaran informasi di jaringan.</p>
 <div class="math notranslate nohighlight">
-\[
-C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
-\]</div>
+\[C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}\]
+</div>
 <p>Di mana:</p>
 <ul class="simple">
-<li><p>(\sigma_{st}): Jumlah lintasan terpendek antara (s) dan (t).</p></li>
-<li><p>(\sigma_{st}(v)): Jumlah lintasan terpendek antara (s) dan (t) yang melewati (v).</p></li>
+<li><p>\(\sigma_{st}\): Jumlah lintasan terpendek antara (s) dan (t).</p></li>
+<li><p>\(\sigma_{st}(v)\): Jumlah lintasan terpendek antara (s) dan (t) yang melewati (v).</p></li>
 </ul>
+
 <section id="normalisasi-betweenness-centrality">
 <h4>Normalisasi Betweenness Centrality<a class="headerlink" href="#normalisasi-betweenness-centrality" title="Link to this heading">#</a></h4>
+<p>Normalisasi dilakukan untuk memudahkan perbandingan antar node:</p>
 <div class="math notranslate nohighlight">
-\[
-C_B^{norm}(v) = \frac{C_B(v)}{(n-1)(n-2)/2}
-\]</div>
-<hr class="docutils" />
+\[C_B^{norm}(v) = \frac{C_B(v)}{(n-1)(n-2)/2}\]
+</div>
 </section>
 </section>
 </section>
-</section>
+
 
     <script type="text/x-thebe-config">
     {
